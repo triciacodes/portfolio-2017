@@ -15,6 +15,11 @@ html {
   font-size: 16px;
 }
 
+body {
+  margin: auto;
+  margin-top: 7rem;
+}
+
 img, embed, object, video {
   max-width: 100%;
 }
@@ -56,9 +61,44 @@ nav a:hover {
 }
 
 /* - - - - - - - - - - LINKS - - - - - - - - - - */
-/* - - - - - - - - - - SECTIONS - - - - - - - - - - */
+a:link {
+  color: #E9529D;
+}
+
+a:hover {
+  color: #F4C341;
+}
+
+a:visited {
+  color: #F4C341;
+}
+
+/* - - - - - - - - - - SECTIONS // LAYOUT - - - - - - - - - - */
+@media screen and (min-width: 960px) {
+  main, header {
+    width: 960px;
+    margin: auto;
+    background-color: pink;
+  }
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+header div {
+  margin: 15px;
+}
+header .intro {
+  width: calc(60% - 30px);
+}
+
 /* - - - - - - - - - - FOOTER - - - - - - - - - - */
 /* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
+header {
+  font-size: 1.125rem;
+  line-height: 2rem;
+}
+
 /* - - - - - - - - - - JQUERY - - - - - - - - - - */
 /* - - - - - - - - - - RESPONSIVE PHONE - - - - - - - - - - */
 /* - - - - - - - - - - RESPONSIVE TABLET - - - - - - - - - - */

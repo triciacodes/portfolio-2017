@@ -8,7 +8,22 @@ $color_primary2: #EDE94C;
 $color_accent1: #F4C341;
 $color_accent2: #F6A138;
 $color_accent_bright: #E9529D;
+//
 $font_main: 'Montserrat', sans-serif;
+//
+$gutter_width_half: 1.945%;
+$gutter_width: 3.89%;
+$col_width_1: 6.5%;
+$col_width_2: 16.89%;
+$col_width_3: 27.28%;
+$col_width_4: 37.67%;
+$col_width_5: 48.06%;
+$col_width_6: 58.45%;
+$col_width_7: 79.73%;
+$col_width_8: 83.12%;
+$col_width_9: 93.51%;
+$col_width_10: 100%;
+
 
 /* - - - - - - - - - - CSS RESET - - - - - - - - - - */
 
@@ -28,10 +43,9 @@ html {
     font-size: 16px;
 }
 
-main {
-}
-
-header { 
+body {
+    margin: auto;
+    margin-top: 7rem;
 }
 
 img, embed, object, video {
@@ -66,10 +80,6 @@ nav {
     font-weight: 500;
     font-size: .875rem;
     
-    ul {
-        
-    }
-    
     li {
         display: inline-block;
         padding-right: 2rem;
@@ -90,19 +100,42 @@ nav {
 /* - - - - - - - - - - LINKS - - - - - - - - - - */
 
 a:link {
+    color: $color_accent_bright;
 }
 
 a:hover {
+    color: $color_accent1;
 }
 
 a:visited {
+    color: $color_accent1;
 }
 
 
-/* - - - - - - - - - - SECTIONS - - - - - - - - - - */
+/* - - - - - - - - - - SECTIONS // LAYOUT - - - - - - - - - - */
 
-section {
+@media screen and (min-width: 960px) {
+    main, header {
+        width: 960px;
+        margin: auto;
+        background-color: pink;
+    }
 }
+
+header {
+
+    display: flex;
+    justify-content: flex-end;
+
+    div {
+        margin: 15px;
+    }
+
+    .intro {
+        width: calc(60% - 30px);
+    }
+}
+
 
 
 /* - - - - - - - - - - FOOTER - - - - - - - - - - */
@@ -114,6 +147,11 @@ footer {
 /* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
 
 body { 
+}
+
+header {
+    font-size: 1.125rem;
+    line-height: 2rem;
 }
 
 p {
