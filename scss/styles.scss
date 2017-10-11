@@ -1,14 +1,18 @@
-/* - - - - - - - - - - VARIABLES - - - - - - - - - - */
-@colorbackground: #f7f7f7;
-@color0: #000;
-@color1: #666;
-@color2: #0b1f86;
-@color3: #69dde5;
-@color4: #a9d859;
+// - - - - - - - - - - VARIABLES - - - - - - - - - -
+$colorbackground: #ffffff;
+$color_neutral_light: #E6E1DA;
+$color_neutral_medium: #787878;
+$color_neutral_dark: #454545;
+$color_primary1: #F37A72;
+$color_primary2: #EDE94C;
+$color_accent1: #F4C341;
+$color_accent2: #F6A138;
+$color_accent_bright: #E9529D;
+$font_main: 'Montserrat', sans-serif;
 
 /* - - - - - - - - - - CSS RESET - - - - - - - - - - */
 
-/* In a separate file */
+/* In reset.css file */
 
 /* - - - - - - - - - - BETTER BOX MODEL - - - - - - - - - - */
 
@@ -19,9 +23,9 @@
 /* - - - - - - - - - - BASIC - - - - - - - - - - */
 
 html {
-}
-
-body {
+    color: $color_neutral_dark;
+    font-family: $font_main;
+    font-size: 16px;
 }
 
 main {
@@ -45,18 +49,39 @@ img, embed, object, video {
 
 /* - - - - - - - - - - NAVIGATION - - - - - - - - - - */
 
+.nav_container {
+    position: absolute;
+    top: .5rem;
+    left: 1rem;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+    letter-spacing: .1rem;
+}
+
 nav {
+
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: $color_neutral_medium;
+    font-weight: 500;
+    font-size: .875rem;
     
     ul {
+        
     }
     
     li {
+        display: inline-block;
+        padding-right: 2rem;
     }
     
     a:link, a:visited {
+        color: $color_neutral_medium;
+        text-decoration: none;
     }
     
     a:hover {
+        color: $color_primary1;
     }
     
 }
