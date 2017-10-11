@@ -1,0 +1,40 @@
+/* - - - - - - - - - - VARIABLES - - - - - - - - - - */
+@colorbackground : #f7f7f7;
+@color0 : #000;
+@color1 : #666;
+@color2 : #0b1f86;
+@color3 : #69dde5;
+@color4 : #a9d859;
+/* - - - - - - - - - - CSS RESET - - - - - - - - - - */
+/* In a separate file */
+/* - - - - - - - - - - BETTER BOX MODEL - - - - - - - - - - */
+/* better box model */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* - - - - - - - - - - BASIC - - - - - - - - - - */
+img, embed, object, video {
+  max-width: 100%;
+}
+
+/* This is for bootstrap */
+.container-fluid {
+  padding: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* - - - - - - - - - - NAVIGATION - - - - - - - - - - */
+/* - - - - - - - - - - LINKS - - - - - - - - - - */
+/* - - - - - - - - - - SECTIONS - - - - - - - - - - */
+/* - - - - - - - - - - FOOTER - - - - - - - - - - */
+/* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
+/* - - - - - - - - - - JQUERY - - - - - - - - - - */
+/* - - - - - - - - - - RESPONSIVE PHONE - - - - - - - - - - */
+/* - - - - - - - - - - RESPONSIVE TABLET - - - - - - - - - - */
+/* - - - - - - - - - - RESPONSIVE LARGER SCREENS - - - - - - - - - - */
+
+/*# sourceMappingURL=main.css.map */
