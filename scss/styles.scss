@@ -11,6 +11,10 @@ $color_accent_bright: #E9529D;
 //
 $font_main: 'Montserrat', sans-serif;
 //
+$breakpoint1: 0px;
+$breakpoint2: 400px;
+$breakpoint3: 960px;
+//
 $gutter_width_half: 1.945%;
 $gutter_width: 3.89%;
 $col_width_1: 6.5%;
@@ -118,16 +122,11 @@ a:visited {
 
 /* main column: header, main, footer */
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $breakpoint3) {
     main, header, footer {
-        width: 960px;
+        width: $breakpoint3;
         margin: auto;
     }
-}
-
-/* header */
-
-@media screen and (min-width: 960px) {
 
     header {
 
@@ -142,9 +141,6 @@ a:visited {
             width: calc(60% - 30px);
         }
     }
-}
-
-@media screen and (min-width: 960px) {
     
     main {
 
