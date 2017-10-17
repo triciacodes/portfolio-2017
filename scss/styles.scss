@@ -122,11 +122,25 @@ a:visited {
 
 /* main column: header, main, footer */
 
-@media screen and (min-width: $breakpoint3) {
+@media screen and (min-width: $breakpoint2) {
+    
     main, header, footer {
-        width: $breakpoint3;
+        width: 90%;
         margin: auto;
     }
+
+}
+
+@media screen and (min-width: $breakpoint3) {
+    
+    main, header, footer {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: $breakpoint2) {
 
     header {
 

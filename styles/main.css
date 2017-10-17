@@ -81,12 +81,19 @@ a:visited {
 
 /* - - - - - - - - - - SECTIONS // LAYOUT - - - - - - - - - - */
 /* main column: header, main, footer */
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 400px) {
   main, header, footer {
-    width: 960px;
+    width: 90%;
     margin: auto;
   }
-
+}
+@media screen and (min-width: 960px) {
+  main, header, footer {
+    width: 80%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 400px) {
   header {
     display: flex;
     justify-content: flex-end;
