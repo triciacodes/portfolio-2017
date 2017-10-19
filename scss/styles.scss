@@ -91,7 +91,7 @@ footer {
 /* - - - - - - - - - - LINKS - - - - - - - - - - */
 
 a:link {
-    color: $color_accent_bright;
+    color: $color_accent2;
 }
 
 a:hover {
@@ -295,5 +295,21 @@ footer {
 
     svg path {
         fill: $color_neutral_medium;
+    }
+}
+
+/* - - - - - - - - - - ONE-OFF STYLES - - - - - - - - - - */
+
+.intro_logo {
+    
+    svg {
+        display:inline; 
+        height: 1rem; 
+        position: relative; 
+        top: 0.2px;
+    }
+
+    svg path, svg rect {
+        fill: $color_accent_bright;
     }
 }

@@ -52,7 +52,7 @@ footer {
 
 /* - - - - - - - - - - LINKS - - - - - - - - - - */
 a:link {
-  color: #E9529D;
+  color: #F6A138;
 }
 
 a:hover {
@@ -218,6 +218,17 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
 }
 .footer_social_icons svg path {
   fill: #787878;
+}
+
+/* - - - - - - - - - - ONE-OFF STYLES - - - - - - - - - - */
+.intro_logo svg {
+  display: inline;
+  height: 1rem;
+  position: relative;
+  top: 0.2px;
+}
+.intro_logo svg path, .intro_logo svg rect {
+  fill: #E9529D;
 }
 
 /*# sourceMappingURL=main.css.map */
