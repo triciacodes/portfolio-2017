@@ -19,11 +19,10 @@ $grid_margin_half: 15px;
 $grid_margin: 30px;
 
 
-/* - - - - - - - - - - TEMP STYLES - - - - - - - - - - */
+// - - - - - - - - - - TEMP STYLES - - - - - - - - - -
 
-header {background-color: lightblue}
-main {background-color: lightyellow}
-footer {background-color: lightsteelblue}
+// header {background-color: lightblue}
+// main {background-color: lightyellow}
 
 
 /* - - - - - - - - - - CSS RESET - - - - - - - - - - */
@@ -38,13 +37,12 @@ footer {background-color: lightsteelblue}
 
 /* - - - - - - - - - - BASIC - - - - - - - - - - */
 
-html {
+body {
     color: $color_neutral_dark;
     font-family: $font_main;
     font-size: 16px;
-}
-
-body {
+    font-weight: 400;
+    line-height: 1.6rem;
     margin: auto;
     margin-top: 7rem;
 }
@@ -55,39 +53,23 @@ img, embed, object, video {
 }
 
 
-/* - - - - - - - - - - NAVIGATION - - - - - - - - - - */
+/* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
 
-.nav_container {
-    position: fixed;
-    top: .5rem;
-    left: 1.2rem;
-    transform-origin: bottom left;
-    transform: rotate(90deg);
-    letter-spacing: .1rem;
+header {
+    font-size: 1.125rem;
+    line-height: 2rem;
 }
 
-nav {
-
-    font-family: 'Montserrat', sans-serif;
+nav, .nav_in_footer {
     text-transform: uppercase;
+    letter-spacing: .1rem;
     color: $color_neutral_medium;
     font-weight: 500;
     font-size: .875rem;
-    
-    li {
-        display: inline-block;
-        padding-right: 2rem;
-    }
-    
-    a:link, a:visited {
-        color: $color_neutral_medium;
-        text-decoration: none;
-    }
-    
-    a:hover {
-        color: $color_primary1;
-    }
-    
+}
+
+footer {
+    color: $color_neutral_medium;
 }
 
 
@@ -105,27 +87,65 @@ a:visited {
     color: $color_accent1;
 }
 
+nav, footer {
+    a:link, a:visited {
+        color: $color_neutral_medium;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $color_primary1;
+    }
+}
+
+
+/* - - - - - - - - - - NAVIGATION - - - - - - - - - - */
+
+.nav_links {
+    position: fixed;
+    top: .5rem;
+    left: 1.2rem;
+    transform-origin: bottom left;
+    transform: rotate(90deg);
+
+    li {
+        display: inline-block;
+        padding-right: 2rem;
+    }
+
+}
+
+.nav_social_icons {
+    text-align: center;
+    position: fixed;
+    width: 23px;
+    bottom: 1.5rem;
+    left: 1.4rem;
+
+    li {
+        padding: 1px 0 1px 0;
+    }
+
+    svg path {
+        fill: $color_neutral_medium;
+    }
+}
 
 /* - - - - - - - - - - SECTIONS // LAYOUT - - - - - - - - - - */
 
 /* main column: header, main, footer */
 
 @media screen and (min-width: $breakpoint2) {
-    
-    main, header, footer {
+    main, header {
         width: 90%;
         margin: auto;
     }
-
 }
 
 @media screen and (min-width: $breakpoint3) {
-    
-    main, header, footer {
+    main, header {
         width: 80%;
         margin: auto;
     }
-
 }
 
 @media screen and (min-width: $breakpoint2) {
@@ -148,6 +168,7 @@ a:visited {
 
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 6rem;
 
         > div {
             margin: 15px;
@@ -176,60 +197,29 @@ a:visited {
         .project:nth-child(5) {
             width: calc(40% - 30px);
         }
-
     }
 }
 
 /* - - - - - - - - - - FOOTER - - - - - - - - - - */
 
 footer {
+    padding: 1.2rem;
+    background-color: $color_primary2;
+    /* flex */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    li {
+        display: inline-block;
+        padding-right: 2rem;
+    }
+    div:nth-child(1), div:nth-child(3) {
+        width: 80%;
+    }
+    div:nth-child(2), div:nth-child(4) {
+        width: 20%;
+    }
+    div:nth-child(1), div:nth-child(2) {
+        margin-bottom: 2.5rem;
+    }
 }
-
-
-/* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
-
-body { 
-}
-
-header {
-    font-size: 1.125rem;
-    line-height: 2rem;
-}
-
-p {
-}
-
-h1 {
-}
-
-h2 {
-}
-
-h3 {
-}
-
-h4 {
-}
-
-h5 {
-}
-
-/* - - - - - - - - - - JQUERY - - - - - - - - - - */
-
-
-
-/* - - - - - - - - - - RESPONSIVE PHONE - - - - - - - - - - */
-
-@media screen and (max-width: 768px) {
-}
-
-/* - - - - - - - - - - RESPONSIVE TABLET - - - - - - - - - - */
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-}
-
-/* - - - - - - - - - - RESPONSIVE LARGER SCREENS - - - - - - - - - - */
-
-@media screen and (min-width: 992px) {
-}
-
