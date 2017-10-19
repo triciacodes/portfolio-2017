@@ -77,6 +77,7 @@ nav a:hover, footer a:hover {
 }
 
 .nav_social_icons {
+  z-index: -1;
   text-align: center;
   position: fixed;
   width: 23px;
@@ -146,24 +147,48 @@ nav a:hover, footer a:hover {
 /* - - - - - - - - - - FOOTER - - - - - - - - - - */
 footer {
   padding: 1.2rem;
+  padding-bottom: 1rem;
   background-color: #EDE94C;
+  z-index: 99;
   /* flex */
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+}
+footer p {
+  padding-bottom: 2px;
 }
 footer li {
   display: inline-block;
   padding-right: 2rem;
 }
-footer div:nth-child(1), footer div:nth-child(3) {
+footer > div:nth-child(1), footer > div:nth-child(3) {
   width: 80%;
 }
-footer div:nth-child(2), footer div:nth-child(4) {
+footer > div:nth-child(2), footer > div:nth-child(4) {
   width: 20%;
 }
-footer div:nth-child(1), footer div:nth-child(2) {
+footer > div:nth-child(1), footer > div:nth-child(2) {
   margin-bottom: 2.5rem;
+}
+
+.footer_social_icons_container {
+  align-self: flex-end;
+}
+
+.footer_social_icons ul {
+  line-height: 0;
+}
+.footer_social_icons li {
+  display: inline-block;
+  padding-right: 5px;
+  line-height: 0;
+}
+.footer_social_icons svg {
+  width: 25px;
+  height: 25px;
+}
+.footer_social_icons svg path {
+  fill: #787878;
 }
 
 /*# sourceMappingURL=main.css.map */

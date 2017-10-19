@@ -115,6 +115,7 @@ nav, footer {
 }
 
 .nav_social_icons {
+    z-index: -1;
     text-align: center;
     position: fixed;
     width: 23px;
@@ -204,22 +205,55 @@ nav, footer {
 
 footer {
     padding: 1.2rem;
+    padding-bottom: 1rem;
     background-color: $color_primary2;
+    z-index: 99;
     /* flex */
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
+    //align-content: stretch;
+
+    p {
+        padding-bottom: 2px;
+    }
+
     li {
         display: inline-block;
         padding-right: 2rem;
     }
-    div:nth-child(1), div:nth-child(3) {
+    >div:nth-child(1), >div:nth-child(3) {
         width: 80%;
     }
-    div:nth-child(2), div:nth-child(4) {
+    >div:nth-child(2), >div:nth-child(4) {
         width: 20%;
     }
-    div:nth-child(1), div:nth-child(2) {
+    >div:nth-child(1), >div:nth-child(2) {
         margin-bottom: 2.5rem;
+    }
+}
+
+.footer_social_icons_container {
+    align-self: flex-end;
+}
+
+.footer_social_icons {
+
+    ul {
+        line-height: 0;
+    }
+
+    li {
+        display: inline-block;
+        padding-right: 5px;
+        line-height: 0;
+    }
+
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    svg path {
+        fill: $color_neutral_medium;
     }
 }
