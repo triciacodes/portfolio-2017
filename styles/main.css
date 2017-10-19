@@ -83,6 +83,9 @@ nav a:hover, footer a:hover {
   display: inline-block;
   padding-right: 2rem;
 }
+.nav_links svg {
+  height: 16px;
+}
 
 .nav_social_icons {
   z-index: -1;
