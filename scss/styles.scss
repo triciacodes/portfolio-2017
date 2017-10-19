@@ -65,7 +65,7 @@ h2 {
     font-weight: 700;
     color: $color_accent2;
     font-style: italic;
-    padding-left: $grid_margin_half;
+    margin-left: $grid_margin_half;
 }
 
 nav, .nav_in_footer {
@@ -106,7 +106,7 @@ nav, footer {
 }
 
 
-/* - - - - - - - - - - NAVIGATION - - - - - - - - - - */
+/* - - - - - - - - - - LAYOUT // NAVIGATION - - - - - - - - - - */
 
 .nav_links {
     position: fixed;
@@ -139,7 +139,7 @@ nav, footer {
     }
 }
 
-/* - - - - - - - - - - SECTIONS // LAYOUT - - - - - - - - - - */
+/* - - - - - - - - - - LAYOUT // SECTIONS - - - - - - - - - - */
 
 /* main column: header, main, footer */
 
@@ -163,13 +163,18 @@ nav, footer {
 
         display: flex;
         justify-content: flex-end;
+        margin-bottom: 7rem;
+
+        p {
+            margin-bottom: 1.7rem;
+        }
 
         div {
             margin: $grid_margin_half;
         }
 
         .intro {
-            width: calc(60% - 30px);
+            width: calc(50% - 30px);
         }
     }
     
@@ -210,7 +215,7 @@ nav, footer {
     }
 }
 
-/* - - - - - - - - - - FOOTER - - - - - - - - - - */
+/* - - - - - - - - - - LAYOUT // FOOTER - - - - - - - - - - */
 
 footer {
     padding: 1.2rem;
