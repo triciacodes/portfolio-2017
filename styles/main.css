@@ -63,12 +63,24 @@ a:visited {
   color: #F4C341;
 }
 
+a {
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
+}
+
 nav a:link, nav a:visited, footer a:link, footer a:visited {
   color: #787878;
   text-decoration: none;
 }
 nav a:hover, footer a:hover {
   color: #F37A72;
+}
+nav a svg path:hover, footer a svg path:hover {
+  fill: #F37A72;
+}
+nav a svg path, footer a svg path {
+  transition: 150ms;
+  transition-timing-function: ease-in-out;
 }
 
 /* - - - - - - - - - - LAYOUT // NAVIGATION - - - - - - - - - - */
@@ -170,9 +182,6 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-footer p {
-  padding-bottom: 2px;
-}
 footer li {
   display: inline-block;
   padding-right: 2rem;
@@ -185,6 +194,10 @@ footer > div:nth-child(2), footer > div:nth-child(4) {
 }
 footer > div:nth-child(1), footer > div:nth-child(2) {
   margin-bottom: 2.5rem;
+}
+
+.footer_logo {
+  height: 15px;
 }
 
 .footer_social_icons_container {

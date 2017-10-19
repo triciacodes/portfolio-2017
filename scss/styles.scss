@@ -18,6 +18,13 @@ $breakpoint3: 960px;
 $grid_margin_half: 15px;
 $grid_margin: 30px;
 
+// - - - - - - - - - - MIXINS - - - - - - - - - -
+
+@mixin hover_transition {
+    transition: 150ms;
+    transition-timing-function: ease-in-out;
+}
+
 
 // - - - - - - - - - - TEMP STYLES - - - - - - - - - -
 
@@ -95,6 +102,10 @@ a:visited {
     color: $color_accent1;
 }
 
+a {
+    @include hover_transition;
+}
+
 nav, footer {
     a:link, a:visited {
         color: $color_neutral_medium;
@@ -102,6 +113,14 @@ nav, footer {
     }
     a:hover {
         color: $color_primary1;
+    }
+
+    a svg path:hover {
+        fill: $color_primary1;
+    }
+
+    a svg path { 
+        @include hover_transition;
     }
 }
 
@@ -231,7 +250,7 @@ footer {
     //align-content: stretch;
 
     p {
-        padding-bottom: 2px;
+        //padding-bottom: 2px;
     }
 
     li {
@@ -247,6 +266,10 @@ footer {
     >div:nth-child(1), >div:nth-child(2) {
         margin-bottom: 2.5rem;
     }
+}
+
+.footer_logo {
+    height: 15px;
 }
 
 .footer_social_icons_container {
