@@ -60,6 +60,14 @@ header {
     line-height: 2rem;
 }
 
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: $color_accent2;
+    font-style: italic;
+    padding-left: $grid_margin_half;
+}
+
 nav, .nav_in_footer {
     text-transform: uppercase;
     letter-spacing: .1rem;
@@ -165,7 +173,8 @@ nav, footer {
         }
     }
     
-    main {
+    /* container for projects on home page */
+    .main_container {
 
         display: flex;
         flex-wrap: wrap;
