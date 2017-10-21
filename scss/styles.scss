@@ -151,7 +151,7 @@ nav, footer {
 }
 
 .nav_social_icons {
-    z-index: -1;
+    z-index: 1;
     text-align: center;
     position: fixed;
     width: 23px;
@@ -246,6 +246,8 @@ nav, footer {
 /* - - - - - - - - - - LAYOUT // FOOTER - - - - - - - - - - */
 
 footer {
+    position: relative;
+    z-index: 99;
     padding: 1.2rem;
     padding-bottom: 1rem;
     background-color: $color_primary2;
