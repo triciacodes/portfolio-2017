@@ -159,6 +159,9 @@ nav a svg path, footer a svg path {
   .main_container > div {
     margin: 15px;
   }
+  .main_container .project_container, .main_container .project_container_inner {
+    position: relative;
+  }
   .main_container .project_container:nth-child(1) {
     width: calc(60% - 30px);
   }
@@ -172,7 +175,7 @@ nav a svg path, footer a svg path {
     width: calc(60% - 30px);
   }
   .main_container .project_container:nth-child(4) > div:not(:last-child) {
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
   .main_container .project_container:nth-child(5) {
     width: calc(40% - 30px);
@@ -243,17 +246,18 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
 .overlay {
   display: block;
   opacity: 0;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 100%);
-  margin-top: -30rem;
-  height: 30rem;
+  height: 100%;
   width: 100%;
   content: '';
   transition: 300ms;
   transition-timing-function: ease-in-out;
 }
 
-.project_container:hover .overlay {
+.project_container.project_overlay:hover .overlay, .project_container_inner.project_overlay:hover .overlay {
   opacity: 1;
   transition: 300ms;
   transition-timing-function: ease-in-out;
