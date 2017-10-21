@@ -21,7 +21,7 @@ $grid_margin: 30px;
 // - - - - - - - - - - MIXINS - - - - - - - - - -
 
 @mixin hover_transition {
-    transition: 150ms;
+    transition: 300ms;
     transition-timing-function: ease-in-out;
 }
 
@@ -217,19 +217,19 @@ nav, footer {
             margin: 15px;
         }
 
-        .project:nth-child(1) {
+        .project_container:nth-child(1) {
             width: calc(60% - 30px);
         }
 
-        .project:nth-child(2) {
+        .project_container:nth-child(2) {
             width: calc(40% - 30px);
         }
 
-        .project:nth-child(3) {
+        .project_container:nth-child(3) {
             width: calc(100% - 30px);
         }
 
-        .project:nth-child(4) {
+        .project_container:nth-child(4) {
             width: calc(60% - 30px);
 
             >div:not(:last-child) {
@@ -237,7 +237,7 @@ nav, footer {
             }
         }
 
-        .project:nth-child(5) {
+        .project_container:nth-child(5) {
             width: calc(40% - 30px);
         }
     }
@@ -321,3 +321,23 @@ footer {
         fill: $color_accent_bright;
     }
 }
+
+/* - - - - - - - - - - TESTING - - - - - - - - - - */
+
+.overlay {
+    //display: none;
+    display: block;
+    opacity: 0;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color_accent_bright 100%);
+    margin-top: -30rem;
+    height: 30rem;
+    width: 100%;
+    content: '';
+    @include hover_transition;
+  }
+
+.project_container:hover .overlay { 
+    opacity: 1;
+    @include hover_transition;
+ }
