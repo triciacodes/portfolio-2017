@@ -1,5 +1,5 @@
 // - - - - - - - - - - VARIABLES - - - - - - - - - -
-$colorbackground: #ffffff;
+$color_background: #ffffff;
 $color_neutral_light: #E6E1DA;
 $color_neutral_medium: #787878;
 $color_neutral_dark: #454545;
@@ -44,14 +44,20 @@ $grid_margin: 30px;
 
 /* - - - - - - - - - - BASIC - - - - - - - - - - */
 
+html {
+    background-color: $color_primary2;
+}
+
 body {
+    background-color: $color_background;
     color: $color_neutral_dark;
     font-family: $font_main;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6rem;
     margin: auto;
-    margin-top: 7rem;
+    padding-top: 7rem;
+    border-top: 0.5rem solid $color_primary2;
 }
 
 img, embed, object, video {

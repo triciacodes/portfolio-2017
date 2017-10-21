@@ -9,14 +9,20 @@
 }
 
 /* - - - - - - - - - - BASIC - - - - - - - - - - */
+html {
+  background-color: #EDE94C;
+}
+
 body {
+  background-color: #ffffff;
   color: #454545;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.6rem;
   margin: auto;
-  margin-top: 7rem;
+  padding-top: 7rem;
+  border-top: 0.5rem solid #EDE94C;
 }
 
 img, embed, object, video {
