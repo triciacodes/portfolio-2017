@@ -339,7 +339,6 @@ footer {
 /* - - - - - - - - - - TESTING - - - - - - - - - - */
 
 .overlay {
-    //display: none;
     display: block;
     opacity: 0;
     position: absolute;
@@ -353,6 +352,15 @@ footer {
     content: '';
     @include hover_transition;
     padding: 1rem;
+
+    img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
     p {
     color: $color_background;
