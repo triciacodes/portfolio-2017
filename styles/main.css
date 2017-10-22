@@ -61,10 +61,11 @@ footer {
 /* - - - - - - - - - - LINKS - - - - - - - - - - */
 a:link {
   color: #F6A138;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #F4C341;
+  color: #E9529D;
 }
 
 a:visited {
@@ -251,7 +252,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 70%);
   height: 100%;
   width: 100%;
   content: '';
@@ -263,7 +264,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   color: #ffffff;
   position: absolute;
   bottom: 1rem;
-  width: 70%;
+  width: 350px;
   font-family: "Open Sans", sans-serif;
   font-size: .875rem;
 }
