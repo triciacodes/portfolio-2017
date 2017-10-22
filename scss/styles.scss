@@ -9,7 +9,13 @@ $color_accent1: #F4C341;
 $color_accent2: #F6A138;
 $color_accent_bright: #E9529D;
 //
-$font_main: 'Montserrat', sans-serif;
+$font_body: 'Open Sans', sans-serif;
+$font_secondary: 'Open Sans', sans-serif;
+$font_nav: 'Montserrat', sans-serif;
+//
+$font_weight_regular: 400;
+$font_weight_medium: 600;
+$font_weight_heavy: 700;
 //
 $breakpoint1: 0px;
 $breakpoint2: 400px;
@@ -50,14 +56,15 @@ html {
 
 body {
     background-color: $color_background;
-    color: $color_neutral_dark;
-    font-family: $font_main;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6rem;
     margin: auto;
     padding-top: 7rem;
     border-top: 0.5rem solid $color_primary2;
+    //
+    color: $color_neutral_dark;
+    font-family: $font_body;
+    font-size: 16px;
+    font-weight: $font_weight_regular;
+    line-height: 1.6rem;
 }
 
 img, embed, object, video {
@@ -74,18 +81,20 @@ header {
 }
 
 h2 {
+    font-family: $font_nav;
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: $font_weight_heavy;
     color: $color_accent2;
     font-style: italic;
     margin-left: $grid_margin_half;
 }
 
 nav, .nav_in_footer {
+    font-family: $font_nav;
     text-transform: uppercase;
     letter-spacing: .1rem;
     color: $color_neutral_medium;
-    font-weight: 500;
+    font-weight: $font_weight_medium;
     font-size: .875rem;
 }
 
@@ -318,7 +327,7 @@ footer {
         display:inline; 
         height: 1rem; 
         position: relative; 
-        top: 0.2px;
+        top: 0.7px;
     }
 
     svg path, svg rect {
@@ -342,7 +351,58 @@ footer {
     width: 100%;
     content: '';
     @include hover_transition;
-  }
+    padding: 1rem;
+
+    p {
+    color: $color_background;
+    position: absolute;
+    bottom: 1rem;
+    width: 70%;
+    font-family: $font_body;
+    font-size: .875rem;
+
+        a:link {
+            text-decoration: none;
+            color: $color_primary1;
+            @include hover_transition;
+        }
+
+        a:hover {
+            color: $color_accent_bright;
+            @include hover_transition;
+        }
+
+        a:visited {
+            color: $color_primary1;
+        }
+
+        .link_button {
+            //border: 2px solid $color_background;
+            border-radius: 3px;
+            padding: 6px 10px;
+            background-color: $color_primary2;
+            margin-right: 5px;
+            text-transform: uppercase;
+            font-weight: $font_weight_medium;
+            font-size: .7rem;
+        }
+
+        .project_description {
+            display: inline-block;
+            padding-bottom: 1.2rem;
+            line-height: 1.2rem;
+        }
+        
+        .project_description_title {
+            font-family: $font_nav;
+            font-weight: 500;
+            font-style: italic;
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+    }
+}
 
 .project_container.project_overlay:hover .overlay, .project_container_inner.project_overlay:hover .overlay { 
     opacity: 1;

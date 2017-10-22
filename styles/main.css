@@ -15,14 +15,14 @@ html {
 
 body {
   background-color: #ffffff;
-  color: #454545;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6rem;
   margin: auto;
   padding-top: 7rem;
   border-top: 0.5rem solid #EDE94C;
+  color: #454545;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6rem;
 }
 
 img, embed, object, video {
@@ -37,6 +37,7 @@ header {
 }
 
 h2 {
+  font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
   font-weight: 700;
   color: #F6A138;
@@ -45,10 +46,11 @@ h2 {
 }
 
 nav, .nav_in_footer {
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #787878;
-  font-weight: 500;
+  font-weight: 600;
   font-size: .875rem;
 }
 
@@ -236,7 +238,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   display: inline;
   height: 1rem;
   position: relative;
-  top: 0.2px;
+  top: 0.7px;
 }
 .intro_logo svg path, .intro_logo svg rect {
   fill: #E9529D;
@@ -255,6 +257,51 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   content: '';
   transition: 300ms;
   transition-timing-function: ease-in-out;
+  padding: 1rem;
+}
+.overlay p {
+  color: #ffffff;
+  position: absolute;
+  bottom: 1rem;
+  width: 70%;
+  font-family: "Open Sans", sans-serif;
+  font-size: .875rem;
+}
+.overlay p a:link {
+  text-decoration: none;
+  color: #F37A72;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.overlay p a:hover {
+  color: #E9529D;
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.overlay p a:visited {
+  color: #F37A72;
+}
+.overlay p .link_button {
+  border-radius: 3px;
+  padding: 6px 10px;
+  background-color: #EDE94C;
+  margin-right: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: .7rem;
+}
+.overlay p .project_description {
+  display: inline-block;
+  padding-bottom: 1.2rem;
+  line-height: 1.2rem;
+}
+.overlay p .project_description_title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  display: inline-block;
 }
 
 .project_container.project_overlay:hover .overlay, .project_container_inner.project_overlay:hover .overlay {
