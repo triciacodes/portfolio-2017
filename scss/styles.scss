@@ -1,69 +1,92 @@
-// - - - - - - - - - - VARIABLES - - - - - - - - - -
-$color_background: #ffffff;
-$color_neutral_light: #E6E1DA;
-$color_neutral_medium: #787878;
-$color_neutral_dark: #454545;
-$color_primary1: #F37A72;
-$color_primary2: #EDE94C;
-$color_accent1: #F4C341;
-$color_accent2: #F6A138;
-$color_accent_bright: #E9529D;
+/* CSS reset in a separate file */
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+//    #VARIABLES 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+$color-background: #ffffff;
+$color-neutral-light: #E6E1DA;
+$color-neutral-medium: #787878;
+$color-neutral-dark: #454545;
+$color-primary1: #F37A72;
+$color-primary2: #EDE94C;
+$color-accent-light: #F4C341;
+$color-accent-medium: #F6A138;
+$color-accent-bright: #E9529D;
 //
-$font_body: 'Open Sans', sans-serif;
-$font_secondary: 'Open Sans', sans-serif;
-$font_nav: 'Montserrat', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$font-secondary: 'Open Sans', sans-serif;
+$font-nav: 'Montserrat', sans-serif;
 //
-$font_weight_regular: 400;
-$font_weight_medium: 600;
-$font_weight_heavy: 700;
+$font-weight-regular: 400;
+$font-weight-medium: 600;
+$font-weight-heavy: 700;
 //
 $breakpoint1: 0px;
 $breakpoint2: 400px;
 $breakpoint3: 960px;
 //
-$grid_margin_half: 15px;
-$grid_margin: 30px;
+$grid-margin-half: 15px;
+$grid-margin: 30px;
 
-// - - - - - - - - - - MIXINS - - - - - - - - - -
 
-@mixin hover_transition {
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+//    #MIXINS
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+@mixin hover-transition {
     transition: 300ms;
     transition-timing-function: ease-in-out;
 }
 
 
-// - - - - - - - - - - TEMP STYLES - - - - - - - - - -
+
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+//    #TEMP STYLES
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 // header {background-color: lightblue}
 // main {background-color: lightyellow}
 
 
-/* - - - - - - - - - - CSS RESET - - - - - - - - - - */
 
-/* In reset.css file */
 
-/* - - - - - - - - - - BETTER BOX MODEL - - - - - - - - - - */
 
-/* better box model */
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #BETTER BOX MODEL
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-/* - - - - - - - - - - BASIC - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #BASIC
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 html {
-    background-color: $color_primary2;
+    background-color: $color-primary2;
 }
 
 body {
-    background-color: $color_background;
+    background-color: $color-background;
     margin: auto;
     padding-top: 7rem;
-    border-top: 0.5rem solid $color_primary2;
+    border-top: 0.5rem solid $color-primary2;
     //
-    color: $color_neutral_dark;
-    font-family: $font_body;
+    color: $color-neutral-dark;
+    font-family: $font-body;
     font-size: 16px;
-    font-weight: $font_weight_regular;
+    font-weight: $font-weight-regular;
     line-height: 1.6rem;
 }
 
@@ -73,7 +96,12 @@ img, embed, object, video {
 }
 
 
-/* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TYPE STYLES
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 header {
     font-size: 1.125rem;
@@ -81,69 +109,79 @@ header {
 }
 
 h2 {
-    font-family: $font_nav;
+    font-family: $font-nav;
     font-size: 2.25rem;
-    font-weight: $font_weight_heavy;
-    color: $color_accent2;
+    font-weight: $font-weight-heavy;
+    color: $color-accent-medium;
     font-style: italic;
-    margin-left: $grid_margin_half;
+    margin-left: $grid-margin-half;
 }
 
-nav, .nav_in_footer {
-    font-family: $font_nav;
+nav, .nav-in-footer {
+    font-family: $font-nav;
     text-transform: uppercase;
     letter-spacing: .1rem;
-    color: $color_neutral_medium;
-    font-weight: $font_weight_medium;
+    color: $color-neutral-medium;
+    font-weight: $font-weight-medium;
     font-size: .875rem;
 }
 
 footer {
-    color: $color_neutral_medium;
+    color: $color-neutral-medium;
 }
 
 
-/* - - - - - - - - - - LINKS - - - - - - - - - - */
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LINKS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 a:link {
-    color: $color_accent2;
+    color: $color-accent-medium;
     text-decoration: none;
 }
 
 a:hover {
-    color: $color_accent_bright;
+    color: $color-accent-bright;
 }
 
 a:visited {
-    color: $color_accent1;
+    color: $color-accent-light;
 }
 
 a {
-    @include hover_transition;
+    @include hover-transition;
 }
 
 nav, footer {
     a:link, a:visited {
-        color: $color_neutral_medium;
+        color: $color-neutral-medium;
         text-decoration: none;
     }
     a:hover {
-        color: $color_primary1;
+        color: $color-primary1;
     }
 
     a svg path:hover {
-        fill: $color_primary1;
+        fill: $color-primary1;
     }
 
     a svg path { 
-        @include hover_transition;
+        @include hover-transition;
     }
 }
 
 
-/* - - - - - - - - - - LAYOUT // NAVIGATION - - - - - - - - - - */
 
-.nav_links {
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #NAVIGATION
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.nav-links {
     position: fixed;
     top: .5rem;
     left: 1.2rem;
@@ -160,7 +198,7 @@ nav, footer {
     }
 }
 
-.nav_social_icons {
+.nav-social-icons {
     z-index: 1;
     text-align: center;
     position: fixed;
@@ -173,11 +211,17 @@ nav, footer {
     }
 
     svg path {
-        fill: $color_neutral_medium;
+        fill: $color-neutral-medium;
     }
 }
 
-/* - - - - - - - - - - LAYOUT // SECTIONS - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #SECTIONS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* main column: header, main, footer */
 
@@ -208,7 +252,7 @@ nav, footer {
         }
 
         div {
-            margin: $grid_margin_half;
+            margin: $grid-margin-half;
         }
 
         .intro {
@@ -217,7 +261,7 @@ nav, footer {
     }
     
     /* container for projects on home page */
-    .main_container {
+    .main-container {
 
         display: flex;
         flex-wrap: wrap;
@@ -227,44 +271,50 @@ nav, footer {
             margin: 15px;
         }
 
-        .project_container, .project_container_inner {
+        .project-container, .project-container-inner {
             position: relative;
         }
 
-        .project_container:nth-child(1) {
+        .project-container:nth-child(1) {
             width: calc(60% - 30px);
         }
 
-        .project_container:nth-child(2) {
+        .project-container:nth-child(2) {
             width: calc(40% - 30px);
         }
 
-        .project_container:nth-child(3) {
+        .project-container:nth-child(3) {
             width: calc(100% - 30px);
         }
 
-        .project_container:nth-child(4) {
+        .project-container:nth-child(4) {
             width: calc(60% - 30px);
 
             >div:not(:last-child) {
-                margin-bottom: $grid_margin;
+                margin-bottom: $grid-margin;
             }
         }
 
-        .project_container:nth-child(5) {
+        .project-container:nth-child(5) {
             width: calc(40% - 30px);
         }
     }
 }
 
-/* - - - - - - - - - - LAYOUT // FOOTER - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #FOOTER
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer {
     position: relative;
     z-index: 99;
     padding: 1.2rem;
     padding-bottom: 1rem;
-    background-color: $color_primary2;
+    background-color: $color-primary2;
     z-index: 99;
     /* flex */
     display: flex;
@@ -290,15 +340,15 @@ footer {
     }
 }
 
-.footer_logo {
+.footer-logo {
     height: 15px;
 }
 
-.footer_social_icons_container {
+.footer-social-icons-container {
     align-self: flex-end;
 }
 
-.footer_social_icons {
+.footer-social-icons {
 
     ul {
         line-height: 0;
@@ -316,13 +366,19 @@ footer {
     }
 
     svg path {
-        fill: $color_neutral_medium;
+        fill: $color-neutral-medium;
     }
 }
 
-/* - - - - - - - - - - ONE-OFF STYLES - - - - - - - - - - */
 
-.intro_logo {
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #ONE-OFF
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.intro-logo {
     
     svg {
         display:inline; 
@@ -332,11 +388,17 @@ footer {
     }
 
     svg path, svg rect {
-        fill: $color_accent_bright;
+        fill: $color-accent-bright;
     }
 }
 
-/* - - - - - - - - - - TESTING - - - - - - - - - - */
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .overlay {
     display: block;
@@ -344,13 +406,13 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color_accent_bright 70%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color-accent-bright 70%);
     //margin-top: -30rem;
     //height: 30rem;
     height: 100%;
     width: 100%;
     content: '';
-    @include hover_transition;
+    @include hover-transition;
     padding: 1rem;
 
     img {
@@ -363,47 +425,47 @@ footer {
     }
 
     p {
-    color: $color_background;
+    color: $color-background;
     position: absolute;
     bottom: 1rem;
     width: 350px;
-    font-family: $font_body;
+    font-family: $font-body;
     font-size: .875rem;
 
         a:link {
             text-decoration: none;
-            color: $color_primary1;
-            @include hover_transition;
+            color: $color-primary1;
+            @include hover-transition;
         }
 
         a:hover {
-            color: $color_accent_bright;
-            @include hover_transition;
+            color: $color-accent-bright;
+            @include hover-transition;
         }
 
         a:visited {
-            color: $color_primary1;
+            color: $color-primary1;
         }
 
-        .link_button {
-            //border: 2px solid $color_background;
+        .link-button {
+            //border: 2px solid $color-background;
             border-radius: 3px;
             padding: 6px 10px;
-            background-color: $color_primary2;
+            background-color: $color-primary2;
             margin-right: 5px;
             text-transform: uppercase;
-            font-weight: $font_weight_medium;
+            font-weight: $font-weight-medium;
             font-size: .7rem;
         }
 
-        .project_description {
+        .project-description {
             display: inline-block;
             padding-bottom: 1.2rem;
             line-height: 1.2rem;
         }
         
-        .project_description_title {
-            font-family: $font_nav;
+        .project-description-title {
+            font-family: $font-nav;
             font-weight: 500;
             font-style: italic;
             font-size: 1.2rem;
@@ -413,7 +475,7 @@ footer {
     }
 }
 
-.project_container.project_overlay:hover .overlay, .project_container_inner.project_overlay:hover .overlay { 
+.project-container.project-overlay:hover .overlay, .project-container-inner.project-overlay:hover .overlay { 
     opacity: 1;
-    @include hover_transition;
+    @include hover-transition;
  }
