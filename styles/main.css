@@ -9,51 +9,7 @@
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #REFACTORED
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.social-icons svg path {
-  fill: #787878;
-}
-.social-icons svg {
-  width: 25px;
-}
-
-.social-icons--nav {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 1.4rem;
-  z-index: 1;
-}
-
-.social-icons__icon--footer {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.nav-links li {
-  display: inline-block;
-  padding-right: 2rem;
-  color: #787878;
-  font-family: "Montserrat", sans-serif;
-  font-size: .875rem;
-  font-weight: 600;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-}
-
-.nav-links__main-menu {
-  position: fixed;
-  top: .5rem;
-  left: 1.2rem;
-  transform: rotate(90deg);
-  transform-origin: bottom left;
-}
-.nav-links__main-menu svg {
-  height: 16px;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #BASIC  (refactored)
+      #BASIC
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 html {
   font-size: 16px;
@@ -76,21 +32,25 @@ body {
   border-top: 0.5rem solid #EDE94C;
 }
 
+.c-main {
+  width: 80%;
+  margin: auto;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-header {
+.intro {
   font-size: 1.125rem;
-  line-height: 2rem;
+  line-height: 2;
 }
 
 h2 {
+  color: #F6A138;
   font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
-  font-weight: 700;
-  color: #F6A138;
   font-style: italic;
-  margin-left: 15px;
+  font-weight: 700;
 }
 
 footer {
@@ -100,9 +60,14 @@ footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+a, nav a svg path {
+  transition: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
 a:link {
-  text-decoration: none;
   color: #F6A138;
+  text-decoration: none;
 }
 
 a:hover {
@@ -113,122 +78,153 @@ a:visited {
   color: #F4C341;
 }
 
-a {
-  transition: 300ms;
-  transition-timing-function: ease-in-out;
-}
-
 nav a:link, nav a:visited, footer a:link, footer a:visited {
   color: #787878;
   text-decoration: none;
 }
 nav a:hover, footer a:hover {
-  color: #F37A72;
+  color: #E9529D;
 }
 nav a svg path:hover, footer a svg path:hover {
-  fill: #F37A72;
-}
-nav a svg path, footer a svg path {
-  transition: 300ms;
-  transition-timing-function: ease-in-out;
+  fill: #E9529D;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #NAVIGATION
+      #COMPONENTS (SHARED)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #SECTIONS
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* main column: header, main, footer */
-@media screen and (min-width: 400px) {
-  main, header {
-    width: 90%;
-    margin: auto;
-  }
+/* ************ Social icons ************ */
+.social svg path {
+  fill: #787878;
 }
-@media screen and (min-width: 960px) {
-  main, header {
-    width: 80%;
-    margin: auto;
-  }
+.social svg {
+  width: 25px;
 }
-@media screen and (min-width: 400px) {
-  header {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 7rem;
-  }
-  header p {
-    margin-bottom: 1.7rem;
-  }
-  header div {
-    margin: 15px;
-  }
-  header .intro {
-    width: calc(50% - 30px);
-  }
 
-  /* container for projects on home page */
-  .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 6rem;
-  }
-  .main-container > div {
-    margin: 15px;
-  }
-  .main-container .project-container, .main-container .project-container-inner {
-    position: relative;
-  }
-  .main-container .project-container:nth-child(1) {
-    width: calc(60% - 30px);
-  }
-  .main-container .project-container:nth-child(2) {
-    width: calc(40% - 30px);
-  }
-  .main-container .project-container:nth-child(3) {
-    width: calc(100% - 30px);
-  }
-  .main-container .project-container:nth-child(4) {
-    width: calc(60% - 30px);
-  }
-  .main-container .project-container:nth-child(4) > div:not(:last-child) {
-    margin-bottom: 30px;
-  }
-  .main-container .project-container:nth-child(5) {
-    width: calc(40% - 30px);
-  }
+/* ************ Navigation links ************ */
+.nav-links li {
+  display: inline-block;
+  padding-right: 2rem;
+  color: #787878;
+  font-family: "Montserrat", sans-serif;
+  font-size: .875rem;
+  font-weight: 600;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT-STRUCTURE #MENU(MAIN) #NAVIGATION
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.nav-links__main-menu {
+  position: fixed;
+  top: .5rem;
+  left: 1.2rem;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+}
+.nav-links__main-menu svg {
+  height: 16px;
+}
+
+.c-social--nav {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.4rem;
+  z-index: 1;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT-STRUCTURE #HEADER
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.c-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px;
+  margin-bottom: 7rem;
+}
+
+.header__intro {
+  width: calc(50% - 30px);
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-footer {
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   z-index: 99;
   padding: 1.2rem;
-  padding-bottom: 1rem;
   background-color: #EDE94C;
-  z-index: 99;
-  /* flex */
-  display: flex;
-  flex-wrap: wrap;
 }
-footer > div:nth-child(1), footer > div:nth-child(3) {
+.c-footer > div:nth-child(1), .c-footer > div:nth-child(3) {
   width: 80%;
 }
-footer > div:nth-child(2), footer > div:nth-child(4) {
+.c-footer > div:nth-child(2), .c-footer > div:nth-child(4) {
   width: 20%;
 }
-footer > div:nth-child(1), footer > div:nth-child(2) {
+.c-footer > div:nth-child(1), .c-footer > div:nth-child(2) {
   margin-bottom: 2.5rem;
 }
 
-.footer-logo {
-  height: 15px;
+.c-social--footer {
+  align-self: flex-end;
 }
 
-.footer-social-icons-container {
-  align-self: flex-end;
+.social__list--footer {
+  line-height: 0;
+}
+
+.social__icon--footer {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.logo--footer {
+  height: 1rem;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT-STRUCTURE #PROJECTS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* #TODO need to take out of this and add to a container */
+/* container for projects on home page */
+.c-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.project__block {
+  margin: 15px;
+}
+
+.project__block, .project-container-inner {
+  position: relative;
+}
+
+.project__block:nth-child(1) {
+  width: calc(60% - 30px);
+}
+
+.project__block:nth-child(2) {
+  width: calc(40% - 30px);
+}
+
+.project__block:nth-child(3) {
+  width: calc(100% - 30px);
+}
+
+.project__block:nth-child(4) {
+  width: calc(60% - 30px);
+}
+.project__block:nth-child(4) > div:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.project__block:nth-child(5) {
+  width: calc(40% - 30px);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -279,7 +275,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
 }
 .overlay p a:link {
   text-decoration: none;
-  color: #F37A72;
+  color: #E9529D;
   transition: 300ms;
   transition-timing-function: ease-in-out;
 }
@@ -289,7 +285,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   transition-timing-function: ease-in-out;
 }
 .overlay p a:visited {
-  color: #F37A72;
+  color: #E9529D;
 }
 .overlay p .link-button {
   border-radius: 3px;
@@ -314,7 +310,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   display: inline-block;
 }
 
-.project-container.project-overlay:hover .overlay, .project-container-inner.project-overlay:hover .overlay {
+.project--overlay:hover .overlay {
   opacity: 1;
   transition: 300ms;
   transition-timing-function: ease-in-out;

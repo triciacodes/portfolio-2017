@@ -8,11 +8,11 @@ $color-background: #ffffff;
 $color-neutral-light: #E6E1DA;
 $color-neutral-medium: #787878;
 $color-neutral-dark: #454545;
-$color-primary1: #F37A72;
+$color-primary1: #E9529D;
 $color-primary2: #EDE94C;
 $color-accent-light: #F4C341;
 $color-accent-medium: #F6A138;
-$color-accent-bright: #E9529D;
+$color-accent-dark: #F37A72;
 //
 $font-body: 'Open Sans', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
@@ -70,61 +70,7 @@ $grid-margin: 30px;
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #REFACTORED
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.social-icons {
-  svg path {
-    fill: $color-neutral-medium;
-  }
-  svg {
-    width: 25px;
-  }
-}
-
-.social-icons--nav {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 1.4rem;
-  z-index: 1;
-}
-
-.social-icons__icon--footer {
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.nav-links {
-  li {
-    display: inline-block;
-    padding-right: 2rem;
-
-    color: $color-neutral-medium;
-    font-family: $font-nav;
-    font-size: .875rem;
-    font-weight: $font-weight-medium;
-    letter-spacing: .1rem;
-    text-transform: uppercase;
-  }
-}
-
-.nav-links__main-menu {
-  position: fixed;
-  top: .5rem;
-  left: 1.2rem;
-  transform: rotate(90deg);
-  transform-origin: bottom left;
-
-  // consider changing or attaching to a logo class
-  svg {
-      height: 16px;
-  }
-}
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #BASIC  (refactored)
+      #BASIC
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 html {
@@ -140,14 +86,19 @@ img, embed, object, video {
 body {
   margin: auto;
   padding-top: 7rem;
-
+  //
   color: $color-neutral-dark;
   font-family: $font-body;
   font-weight: $font-weight-regular;
   line-height: 1.6;
-
+  //
   background-color: $color-background;
   border-top: 0.5rem solid $color-primary2;
+}
+
+.c-main {
+  width: 80%;
+  margin: auto;
 }
 
 
@@ -158,44 +109,45 @@ body {
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-header {
-    font-size: 1.125rem;
-    line-height: 2rem;
+.intro {
+  font-size: 1.125rem;
+  line-height: 2;
 }
 
 h2 {
-    font-family: $font-nav;
-    font-size: 2.25rem;
-    font-weight: $font-weight-heavy;
-    color: $color-accent-medium;
-    font-style: italic;
-    margin-left: $grid-margin-half;
+  color: $color-accent-medium;
+  font-family: $font-nav;
+  font-size: 2.25rem;
+  font-style: italic;
+  font-weight: $font-weight-heavy;
 }
 
 footer {
-    color: $color-neutral-medium;
+  color: $color-neutral-medium;
 }
+
+
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+a, nav a svg path {
+  @include hover-transition;
+}
+
 a:link {
-    text-decoration: none;
     color: $color-accent-medium;
+    text-decoration: none;
 }
 
 a:hover {
-    color: $color-accent-bright;
+    color: $color-primary1;
 }
 
 a:visited {
     color: $color-accent-light;
-}
-
-a {
-    @include hover-transition;
 }
 
 nav, footer {
@@ -210,10 +162,6 @@ nav, footer {
     a svg path:hover {
         fill: $color-primary1;
     }
-
-    a svg path { 
-        @include hover-transition;
-    }
 }
 
 
@@ -221,93 +169,84 @@ nav, footer {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #NAVIGATION
+      #COMPONENTS (SHARED)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* ************ Social icons ************ */
+
+.social {
+  svg path {
+    fill: $color-neutral-medium;
+  }
+  svg {
+    width: 25px;
+  }
+}
+
+/* ************ Navigation links ************ */
+
+.nav-links {
+  li {
+    display: inline-block;
+    padding-right: 2rem;
+    //
+    color: $color-neutral-medium;
+    font-family: $font-nav;
+    font-size: .875rem;
+    font-weight: $font-weight-medium;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+}
+
 
 
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #SECTIONS
+      #LAYOUT-STRUCTURE #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* main column: header, main, footer */
+.nav-links__main-menu {
+  position: fixed;
+  top: .5rem;
+  left: 1.2rem;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
 
-@media screen and (min-width: $breakpoint2) {
-    main, header {
-        width: 90%;
-        margin: auto;
-    }
+  // #TODO consider changing or attaching to a logo class
+  svg {
+      height: 16px;
+  }
 }
 
-@media screen and (min-width: $breakpoint3) {
-    main, header {
-        width: 80%;
-        margin: auto;
-    }
+.c-social--nav {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.4rem;
+  z-index: 1;
 }
 
-@media screen and (min-width: $breakpoint2) {
 
-    header {
 
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: 7rem;
 
-        p {
-            margin-bottom: 1.7rem;
-        }
 
-        div {
-            margin: $grid-margin-half;
-        }
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT-STRUCTURE #HEADER
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-        .intro {
-            width: calc(50% - 30px);
-        }
-    }
-    
-    /* container for projects on home page */
-    .main-container {
-
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 6rem;
-
-        > div {
-            margin: 15px;
-        }
-
-        .project-container, .project-container-inner {
-            position: relative;
-        }
-
-        .project-container:nth-child(1) {
-            width: calc(60% - 30px);
-        }
-
-        .project-container:nth-child(2) {
-            width: calc(40% - 30px);
-        }
-
-        .project-container:nth-child(3) {
-            width: calc(100% - 30px);
-        }
-
-        .project-container:nth-child(4) {
-            width: calc(60% - 30px);
-
-            >div:not(:last-child) {
-                margin-bottom: $grid-margin;
-            }
-        }
-
-        .project-container:nth-child(5) {
-            width: calc(40% - 30px);
-        }
-    }
+.c-header {
+  display: flex;
+  justify-content: flex-end;
+  margin: $grid-margin-half;
+  margin-bottom: 7rem;
 }
+
+.header__intro {
+  width: calc(50% - 30px);
+}
+
+
 
 
 
@@ -315,43 +254,93 @@ nav, footer {
       #LAYOUT #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-footer {
-    position: relative;
-    z-index: 99;
-    padding: 1.2rem;
-    padding-bottom: 1rem;
-    background-color: $color-primary2;
-    z-index: 99;
-    /* flex */
-    display: flex;
-    flex-wrap: wrap;
-    //align-content: stretch;
-
-    p {
-        //padding-bottom: 2px;
-    }
-
-    
-    >div:nth-child(1), >div:nth-child(3) {
-        width: 80%;
-    }
-    >div:nth-child(2), >div:nth-child(4) {
-        width: 20%;
-    }
-    >div:nth-child(1), >div:nth-child(2) {
-        margin-bottom: 2.5rem;
-    }
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 99;
+  padding: 1.2rem; 
+  background-color: $color-primary2;
+  
+  >div:nth-child(1), >div:nth-child(3) {
+    width: 80%;
+  }
+  >div:nth-child(2), >div:nth-child(4) {
+    width: 20%;
+  }
+  >div:nth-child(1), >div:nth-child(2) {
+    margin-bottom: 2.5rem;
+  }
 }
 
-.footer-logo {
-    height: 15px;
+.c-social--footer {
+  align-self: flex-end;
 }
 
-.footer-social-icons-container {
-    align-self: flex-end;
+.social__list--footer {
+  line-height: 0;
+}
+
+.social__icon--footer {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.logo--footer {
+  height: 1rem;
 }
 
 
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT-STRUCTURE #PROJECTS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* #TODO need to take out of this and add to a container */
+h2 {
+  //margin-left: $grid-margin-half;
+}
+
+/* container for projects on home page */
+.c-projects {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.project__block {
+  margin: 15px;
+}
+
+.project__block, .project-container-inner {
+  position: relative;
+}
+
+.project__block:nth-child(1) {
+  width: calc(60% - 30px);
+}
+
+.project__block:nth-child(2) {
+  width: calc(40% - 30px);
+}
+
+.project__block:nth-child(3) {
+  width: calc(100% - 30px);
+}
+
+.project__block:nth-child(4) {
+  width: calc(60% - 30px);
+
+  >div:not(:last-child) {
+    margin-bottom: $grid-margin;
+  }
+}
+
+.project__block:nth-child(5) {
+  width: calc(40% - 30px);
+}
 
 
 
@@ -371,7 +360,7 @@ footer {
     }
 
     svg path, svg rect {
-        fill: $color-accent-bright;
+        fill: $color-primary1;
     }
 }
 
@@ -389,7 +378,7 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color-accent-bright 70%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color-primary1 70%);
     //margin-top: -30rem;
     //height: 30rem;
     height: 100%;
@@ -422,7 +411,7 @@ footer {
         }
 
         a:hover {
-            color: $color-accent-bright;
+            color: $color-primary1;
             @include hover-transition;
         }
 
@@ -458,7 +447,7 @@ footer {
     }
 }
 
-.project-container.project-overlay:hover .overlay, .project-container-inner.project-overlay:hover .overlay { 
-    opacity: 1;
-    @include hover-transition;
- }
+.project--overlay:hover .overlay { 
+  opacity: 1;
+  @include hover-transition;
+}
