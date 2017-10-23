@@ -1,14 +1,16 @@
-/* - - - - - - - - - - CSS RESET - - - - - - - - - - */
-/* In reset.css file */
-/* - - - - - - - - - - BETTER BOX MODEL - - - - - - - - - - */
-/* better box model */
+/* CSS reset in a separate file */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #BETTER BOX MODEL
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* - - - - - - - - - - BASIC - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #BASIC
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 html {
   background-color: #EDE94C;
 }
@@ -30,7 +32,9 @@ img, embed, object, video {
   display: block;
 }
 
-/* - - - - - - - - - - TEXT STYLES - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TYPE STYLES
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 header {
   font-size: 1.125rem;
   line-height: 2rem;
@@ -45,7 +49,7 @@ h2 {
   margin-left: 15px;
 }
 
-nav, .nav_in_footer {
+nav, .nav-in-footer {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -58,7 +62,9 @@ footer {
   color: #787878;
 }
 
-/* - - - - - - - - - - LINKS - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LINKS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 a:link {
   color: #F6A138;
   text-decoration: none;
@@ -92,23 +98,25 @@ nav a svg path, footer a svg path {
   transition-timing-function: ease-in-out;
 }
 
-/* - - - - - - - - - - LAYOUT // NAVIGATION - - - - - - - - - - */
-.nav_links {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #NAVIGATION
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.nav-links {
   position: fixed;
   top: .5rem;
   left: 1.2rem;
   transform-origin: bottom left;
   transform: rotate(90deg);
 }
-.nav_links li {
+.nav-links li {
   display: inline-block;
   padding-right: 2rem;
 }
-.nav_links svg {
+.nav-links svg {
   height: 16px;
 }
 
-.nav_social_icons {
+.nav-social-icons {
   z-index: 1;
   text-align: center;
   position: fixed;
@@ -116,14 +124,16 @@ nav a svg path, footer a svg path {
   bottom: 1.5rem;
   left: 1.4rem;
 }
-.nav_social_icons li {
+.nav-social-icons li {
   padding: 1px 0 1px 0;
 }
-.nav_social_icons svg path {
+.nav-social-icons svg path {
   fill: #787878;
 }
 
-/* - - - - - - - - - - LAYOUT // SECTIONS - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #SECTIONS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* main column: header, main, footer */
 @media screen and (min-width: 400px) {
   main, header {
@@ -154,37 +164,39 @@ nav a svg path, footer a svg path {
   }
 
   /* container for projects on home page */
-  .main_container {
+  .main-container {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 6rem;
   }
-  .main_container > div {
+  .main-container > div {
     margin: 15px;
   }
-  .main_container .project_container, .main_container .project_container_inner {
+  .main-container .project-container, .main-container .project-container-inner {
     position: relative;
   }
-  .main_container .project_container:nth-child(1) {
+  .main-container .project-container:nth-child(1) {
     width: calc(60% - 30px);
   }
-  .main_container .project_container:nth-child(2) {
+  .main-container .project-container:nth-child(2) {
     width: calc(40% - 30px);
   }
-  .main_container .project_container:nth-child(3) {
+  .main-container .project-container:nth-child(3) {
     width: calc(100% - 30px);
   }
-  .main_container .project_container:nth-child(4) {
+  .main-container .project-container:nth-child(4) {
     width: calc(60% - 30px);
   }
-  .main_container .project_container:nth-child(4) > div:not(:last-child) {
+  .main-container .project-container:nth-child(4) > div:not(:last-child) {
     margin-bottom: 30px;
   }
-  .main_container .project_container:nth-child(5) {
+  .main-container .project-container:nth-child(5) {
     width: calc(40% - 30px);
   }
 }
-/* - - - - - - - - - - LAYOUT // FOOTER - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #FOOTER
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 footer {
   position: relative;
   z-index: 99;
@@ -210,42 +222,46 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   margin-bottom: 2.5rem;
 }
 
-.footer_logo {
+.footer-logo {
   height: 15px;
 }
 
-.footer_social_icons_container {
+.footer-social-icons-container {
   align-self: flex-end;
 }
 
-.footer_social_icons ul {
+.footer-social-icons ul {
   line-height: 0;
 }
-.footer_social_icons li {
+.footer-social-icons li {
   display: inline-block;
   padding-right: 5px;
   line-height: 0;
 }
-.footer_social_icons svg {
+.footer-social-icons svg {
   width: 25px;
   height: 25px;
 }
-.footer_social_icons svg path {
+.footer-social-icons svg path {
   fill: #787878;
 }
 
-/* - - - - - - - - - - ONE-OFF STYLES - - - - - - - - - - */
-.intro_logo svg {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #ONE-OFF
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.intro-logo svg {
   display: inline;
   height: 1rem;
   position: relative;
   top: 0.7px;
 }
-.intro_logo svg path, .intro_logo svg rect {
+.intro-logo svg path, .intro-logo svg rect {
   fill: #E9529D;
 }
 
-/* - - - - - - - - - - TESTING - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .overlay {
   display: block;
   opacity: 0;
@@ -290,7 +306,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
 .overlay p a:visited {
   color: #F37A72;
 }
-.overlay p .link_button {
+.overlay p .link-button {
   border-radius: 3px;
   padding: 6px 10px;
   background-color: #EDE94C;
@@ -299,12 +315,12 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   font-weight: 600;
   font-size: .7rem;
 }
-.overlay p .project_description {
+.overlay p .project-description {
   display: inline-block;
   padding-bottom: 1.2rem;
   line-height: 1.2rem;
 }
-.overlay p .project_description_title {
+.overlay p .project-description-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -313,7 +329,7 @@ footer > div:nth-child(1), footer > div:nth-child(2) {
   display: inline-block;
 }
 
-.project_container.project_overlay:hover .overlay, .project_container_inner.project_overlay:hover .overlay {
+.project-container.project-overlay:hover .overlay, .project-container-inner.project-overlay:hover .overlay {
   opacity: 1;
   transition: 300ms;
   transition-timing-function: ease-in-out;
