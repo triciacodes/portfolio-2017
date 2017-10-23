@@ -70,29 +70,84 @@ $grid-margin: 30px;
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #BASIC
+      #REFACTORED
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.social-icons {
+  svg path {
+    fill: $color-neutral-medium;
+  }
+  svg {
+    width: 25px;
+  }
+}
+
+.social-icons--nav {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.4rem;
+  z-index: 1;
+}
+
+.social-icons__icon--footer {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.nav-links {
+  li {
+    display: inline-block;
+    padding-right: 2rem;
+
+    color: $color-neutral-medium;
+    font-family: $font-nav;
+    font-size: .875rem;
+    font-weight: $font-weight-medium;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+}
+
+.nav-links__main-menu {
+  position: fixed;
+  top: .5rem;
+  left: 1.2rem;
+  transform: rotate(90deg);
+  transform-origin: bottom left;
+
+  // consider changing or attaching to a logo class
+  svg {
+      height: 16px;
+  }
+}
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #BASIC  (refactored)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 html {
-    background-color: $color-primary2;
-}
-
-body {
-    background-color: $color-background;
-    margin: auto;
-    padding-top: 7rem;
-    border-top: 0.5rem solid $color-primary2;
-    //
-    color: $color-neutral-dark;
-    font-family: $font-body;
-    font-size: 16px;
-    font-weight: $font-weight-regular;
-    line-height: 1.6rem;
+  font-size: 16px;
+  background-color: $color-primary2;
 }
 
 img, embed, object, video {
-    max-width: 100%;
-    display: block;
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  margin: auto;
+  padding-top: 7rem;
+
+  color: $color-neutral-dark;
+  font-family: $font-body;
+  font-weight: $font-weight-regular;
+  line-height: 1.6;
+
+  background-color: $color-background;
+  border-top: 0.5rem solid $color-primary2;
 }
 
 
@@ -117,21 +172,9 @@ h2 {
     margin-left: $grid-margin-half;
 }
 
-nav, .nav-in-footer {
-    font-family: $font-nav;
-    text-transform: uppercase;
-    letter-spacing: .1rem;
-    color: $color-neutral-medium;
-    font-weight: $font-weight-medium;
-    font-size: .875rem;
-}
-
 footer {
     color: $color-neutral-medium;
 }
-
-
-
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -139,8 +182,8 @@ footer {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 a:link {
-    color: $color-accent-medium;
     text-decoration: none;
+    color: $color-accent-medium;
 }
 
 a:hover {
@@ -180,41 +223,6 @@ nav, footer {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.nav-links {
-    position: fixed;
-    top: .5rem;
-    left: 1.2rem;
-    transform-origin: bottom left;
-    transform: rotate(90deg);
-
-    li {
-        display: inline-block;
-        padding-right: 2rem;
-    }
-
-    svg {
-        height: 16px;
-    }
-}
-
-.nav-social-icons {
-    z-index: 1;
-    text-align: center;
-    position: fixed;
-    width: 23px;
-    bottom: 1.5rem;
-    left: 1.4rem;
-
-    li {
-        padding: 1px 0 1px 0;
-    }
-
-    svg path {
-        fill: $color-neutral-medium;
-    }
-}
-
 
 
 
@@ -303,8 +311,6 @@ nav, footer {
 
 
 
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -325,10 +331,7 @@ footer {
         //padding-bottom: 2px;
     }
 
-    li {
-        display: inline-block;
-        padding-right: 2rem;
-    }
+    
     >div:nth-child(1), >div:nth-child(3) {
         width: 80%;
     }
@@ -348,27 +351,7 @@ footer {
     align-self: flex-end;
 }
 
-.footer-social-icons {
 
-    ul {
-        line-height: 0;
-    }
-
-    li {
-        display: inline-block;
-        padding-right: 5px;
-        line-height: 0;
-    }
-
-    svg {
-        width: 25px;
-        height: 25px;
-    }
-
-    svg path {
-        fill: $color-neutral-medium;
-    }
-}
 
 
 
