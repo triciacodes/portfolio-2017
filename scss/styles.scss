@@ -22,12 +22,14 @@ $font-weight-regular: 400;
 $font-weight-medium: 600;
 $font-weight-heavy: 700;
 //
-$breakpoint1: 0px;
-$breakpoint2: 400px;
-$breakpoint3: 960px;
-//
 $grid-margin-half: 15px;
 $grid-margin: 30px;
+//
+$breakpoint1: 25.2em; // 400 px
+$breakpoint2: 38em; // 600 px
+$breakpoint3: 50em; // 800 px
+$breakpoint4: 63em; // 1000 px
+$breakpoint5: 81em; // 1300 px
 
 
 
@@ -38,12 +40,39 @@ $grid-margin: 30px;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 @mixin hover-transition {
-    transition: 400ms;
-    transition-timing-function: ease-in-out;
+  transition: 400ms;
+  transition-timing-function: ease-in-out;
 }
 
+@mixin media-query1 {
+  @media screen and (max-width: #{$breakpoint1}) {
+    @content;
+  }
+}
 
+@mixin media-query2 {
+  @media screen and (min-width: #{$breakpoint1}) {
+    @content;
+  }
+}
 
+@mixin media-query3 {
+  @media screen and (min-width: #{$breakpoint2}) {
+    @content;
+  }
+}
+
+@mixin media-query4 {
+  @media screen and (min-width: #{$breakpoint3}) {
+    @content;
+  }
+}
+
+@mixin media-query5 {
+  @media screen and (min-width: #{$breakpoint4}) {
+    @content;
+  }
+}
 
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -83,7 +112,10 @@ img, embed, object, video {
 
 body {
   margin: auto;
-  padding-top: 7rem;
+  padding-top: 2rem;
+  @include media-query4 {
+    padding-top: 7rem;
+  }
   //
   color: $color-neutral-dark;
   font-family: $font-body;
@@ -95,8 +127,11 @@ body {
 }
 
 .c-main {
-  width: 80%;
   margin: auto;
+  width: 100%;
+  @include media-query4 {
+  width: 80%;
+  }
 }
 
 
@@ -108,17 +143,27 @@ body {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .intro {
-  font-size: 1.125rem;
-  line-height: 2;
+  font-size: 1rem;
+  line-height: 1.7;
+  @include media-query3 {
+    font-size: 1.125rem;
+    line-height: 2;
+  }
 }
 
 h2 {
   color: $color-accent-medium;
   font-family: $font-nav;
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: $font-weight-heavy;
 }
+
+@include media-query3 {
+  h2 {
+    font-size: 2.25rem;
+  }
+} 
 
 footer {
   color: $color-neutral-medium;
@@ -255,22 +300,26 @@ a.button:visited {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .nav-links__main-menu {
-  position: fixed;
-  top: .5rem;
-  left: 1.2rem;
-  transform: rotate(90deg);
-  transform-origin: bottom left;
+  @include media-query4 {
+    position: fixed;
+    top: .5rem;
+    left: 1.2rem;
+    transform: rotate(90deg);
+    transform-origin: bottom left;
+  }
 }
 
 svg.logo--menu {
-    height: 16px;
+  height: 1em;
 }
 
 .c-social--nav {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 1.2rem;
-  z-index: 1;
+  @include media-query4 {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 1.2rem;
+    z-index: 1;
+  }
 }
 
 
@@ -285,11 +334,17 @@ svg.logo--menu {
   display: flex;
   justify-content: flex-end;
   margin: $grid-margin-half;
-  margin-bottom: 7rem;
+  @include media-query3 {
+    margin-bottom: 7rem;
+  }
 }
 
 .header__intro {
-  width: calc(50% - 30px);
+
+  width: 100%;
+  @include media-query3 {
+    width: calc(50% - 30px);
+  }
 }
 
 .logo--intro {  
@@ -308,23 +363,60 @@ svg.logo--menu {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .c-footer {
-  display: flex;
-  flex-wrap: wrap;
   position: relative;
   z-index: 99;
+  display: flex;
+  flex-wrap: wrap;
   padding: 1.2rem; 
   background-color: $color-primary2;
+
+  >div {
+    width: 100%
+  }
   
-  >div:nth-child(1), >div:nth-child(3) {
-    width: 80%;
+  @include media-query2 {
+    >div:nth-child(1), >div:nth-child(3) {
+      width: 75%;
+    }
   }
-  >div:nth-child(2), >div:nth-child(4) {
-    width: 20%;
+
+  @include media-query3 {
+    >div:nth-child(1), >div:nth-child(3) {
+      width: 80%;
+    }
   }
-  >div:nth-child(1), >div:nth-child(2) {
-    margin-bottom: 2.5rem;
+
+  @include media-query2 {
+    >div:nth-child(2), >div:nth-child(4) {
+      width: 25%;
+    }
+  }
+
+  @include media-query3 {
+    >div:nth-child(2), >div:nth-child(4) {
+      width: 20%;
+    }
+  }
+
+  @include media-query2 {
+    >div:nth-child(1), >div:nth-child(2) {
+      margin-bottom: 2.5rem;
+    }
+  } 
+}
+
+/* hides second set of menu links on mobile */
+.nav-links--footer {
+  display: none;
+}
+
+@include media-query2 {
+  .nav-links--footer {
+    display: inline-block;
   }
 }
+
+
 
 .c-social--footer {
   align-self: flex-end;
@@ -362,41 +454,82 @@ main {
 .c-projects {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 6rem;
+  @include media-query3 {
+    margin-bottom: 3rem;
+  }
+  @include media-query4 {
+    margin-bottom: 6rem;
+  }
 }
 
-/* space between projects */
-.project__block {
-  margin: $grid-margin-half;
+
+
+/* projects are full width on mobile-size screens */
+.project-block {
+  width: 100%;
 }
 
-/* adds bottom margin to project that has a shared
+@include media-query3 {
+  /* space between projects */
+  .project__block {
+    margin: 5px;
+  }
+
+  /* adds bottom margin to project that has a shared
    block container with another project */
-.project--margin {
-  margin-bottom: $grid-margin;
+  .project--margin {
+    margin-bottom: 10px;
+  }
 }
 
-/* do not remove inner container class
-   this makes the overlay go over
-   single projects only */
-.project__block, 
-.project-container-inner {
-  position: relative;
+@include media-query4 {
+  /* space between projects */
+  .project__block {
+    margin: 10px;
+  }
+
+  /* adds bottom margin to project that has a shared
+   block container with another project */
+  .project--margin {
+    margin-bottom: 20px;
+  }
 }
 
-.project__block:nth-child(1),
-.project__block:nth-child(4) {
-  width: calc(60% - 30px);
+@include media-query5 {
+  /* space between projects */
+  .project__block {
+    margin: $grid-margin-half;
+  }
+
+  /* adds bottom margin to project that has a shared
+   block container with another project */
+  .project--margin {
+    margin-bottom: $grid-margin;
+  }
 }
 
-.project__block:nth-child(2),
-.project__block:nth-child(5) {
-  width: calc(40% - 30px);
-}
+@include media-query3 {
 
-.project__block:nth-child(3) {
-  width: calc(100% - 30px);
-}
+  /* do not remove inner container class -- this makes the overlay go 
+     over single projects only */
+  .project__block, 
+  .project-container-inner {
+    position: relative;
+  }
+
+  /* these styles create the grid on larger screens */
+  .project__block:nth-child(1),
+  .project__block:nth-child(4) {
+    width: calc(60% - 30px);
+  }
+  .project__block:nth-child(2),
+  .project__block:nth-child(5) {
+    width: calc(40% - 30px);
+  }
+  .project__block:nth-child(3) {
+    width: calc(100% - 30px);
+  }
+} /* end media-query3 for project grid */
 
 
 
