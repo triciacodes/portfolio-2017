@@ -61,7 +61,7 @@ footer {
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 a, nav a svg path {
-  transition: 300ms;
+  transition: 900ms;
   transition-timing-function: ease-in-out;
 }
 
@@ -89,10 +89,23 @@ nav a svg path:hover, footer a svg path:hover {
   fill: #E9529D;
 }
 
+a.button:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.button:visited {
+  color: #ffffff;
+}
+
+a.button:hover {
+  color: #E9529D;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #COMPONENTS (SHARED)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* ************ Social icons ************ */
+/* ************ #Social icons ************ */
 .social svg path {
   fill: #787878;
 }
@@ -100,7 +113,7 @@ nav a svg path:hover, footer a svg path:hover {
   width: 25px;
 }
 
-/* ************ Navigation links ************ */
+/* ************ #Navigation links ************ */
 .nav-links li {
   display: inline-block;
   padding-right: 2rem;
@@ -112,8 +125,19 @@ nav a svg path:hover, footer a svg path:hover {
   text-transform: uppercase;
 }
 
+/* ************ #Buttons ************ */
+.button {
+  margin-right: 5px;
+  padding: 6px 10px;
+  font-size: .7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #EDE94C;
+  border-radius: 3px;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT-STRUCTURE #MENU(MAIN) #NAVIGATION
+      #LAYOUT #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .nav-links__main-menu {
   position: fixed;
@@ -134,7 +158,7 @@ nav a svg path:hover, footer a svg path:hover {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT-STRUCTURE #HEADER
+      #LAYOUT #HEADER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .c-header {
   display: flex;
@@ -186,7 +210,7 @@ nav a svg path:hover, footer a svg path:hover {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT-STRUCTURE #PROJECTS
+      #LAYOUT #PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* #TODO need to take out of this and add to a container */
 /* container for projects on home page */
@@ -196,35 +220,37 @@ nav a svg path:hover, footer a svg path:hover {
   margin-bottom: 6rem;
 }
 
+/* space between projects */
 .project__block {
   margin: 15px;
 }
 
-.project__block, .project-container-inner {
+/* adds bottom margin to project that has a shared
+   block container with another project */
+.project--margin {
+  margin-bottom: 30px;
+}
+
+/* do not remove inner container class
+   this makes the overlay go over
+   single projects only */
+.project__block,
+.project-container-inner {
   position: relative;
 }
 
-.project__block:nth-child(1) {
+.project__block:nth-child(1),
+.project__block:nth-child(4) {
   width: calc(60% - 30px);
 }
 
-.project__block:nth-child(2) {
+.project__block:nth-child(2),
+.project__block:nth-child(5) {
   width: calc(40% - 30px);
 }
 
 .project__block:nth-child(3) {
   width: calc(100% - 30px);
-}
-
-.project__block:nth-child(4) {
-  width: calc(60% - 30px);
-}
-.project__block:nth-child(4) > div:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-.project__block:nth-child(5) {
-  width: calc(40% - 30px);
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -244,24 +270,25 @@ nav a svg path:hover, footer a svg path:hover {
       #TESTING
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .overlay {
-  display: block;
-  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 70%);
-  height: 100%;
+  display: block;
   width: 100%;
-  content: '';
-  transition: 300ms;
-  transition-timing-function: ease-in-out;
+  height: 100%;
   padding: 1rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 70%);
+  transition: 900ms;
+  transition-timing-function: ease-in-out;
+  opacity: 0;
+  /* transparent pngs */
+  /* to link to projects */
 }
 .overlay img {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -273,35 +300,14 @@ nav a svg path:hover, footer a svg path:hover {
   font-family: "Open Sans", sans-serif;
   font-size: .875rem;
 }
-.overlay p a:link {
-  text-decoration: none;
-  color: #E9529D;
-  transition: 300ms;
-  transition-timing-function: ease-in-out;
-}
-.overlay p a:hover {
-  color: #E9529D;
-  transition: 300ms;
-  transition-timing-function: ease-in-out;
-}
-.overlay p a:visited {
-  color: #E9529D;
-}
-.overlay p .link-button {
-  border-radius: 3px;
-  padding: 6px 10px;
-  background-color: #EDE94C;
-  margin-right: 5px;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: .7rem;
-}
-.overlay p .project-description {
+
+.project-description {
   display: inline-block;
   padding-bottom: 1.2rem;
   line-height: 1.2rem;
 }
-.overlay p .project-description-title {
+
+.project-description-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-style: italic;
@@ -312,7 +318,7 @@ nav a svg path:hover, footer a svg path:hover {
 
 .project--overlay:hover .overlay {
   opacity: 1;
-  transition: 300ms;
+  transition: 900ms;
   transition-timing-function: ease-in-out;
 }
 
