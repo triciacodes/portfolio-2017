@@ -57,10 +57,25 @@ footer {
   color: #787878;
 }
 
+.project-desc__title {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-desc__text {
+  color: #ffffff;
+  font-size: .875rem;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-a, nav a svg path {
+a,
+nav a svg path,
+footer a svg path {
   transition: 900ms;
   transition-timing-function: ease-in-out;
 }
@@ -94,17 +109,22 @@ a.button:link {
   text-decoration: none;
 }
 
-a.button:visited {
-  color: #ffffff;
-}
-
 a.button:hover {
   color: #E9529D;
+}
+
+a.button:visited {
+  color: #ffffff;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #COMPONENTS (SHARED)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* ************ #Logo ************ */
+.logo svg path, .logo svg rect {
+  fill: #E9529D;
+}
+
 /* ************ #Social icons ************ */
 .social svg path {
   fill: #787878;
@@ -146,14 +166,15 @@ a.button:hover {
   transform: rotate(90deg);
   transform-origin: bottom left;
 }
-.nav-links__main-menu svg {
+
+svg.logo--menu {
   height: 16px;
 }
 
 .c-social--nav {
   position: fixed;
   bottom: 1.5rem;
-  left: 1.4rem;
+  left: 1.2rem;
   z-index: 1;
 }
 
@@ -169,6 +190,12 @@ a.button:hover {
 
 .header__intro {
   width: calc(50% - 30px);
+}
+
+.logo--intro {
+  position: relative;
+  top: 0.7px;
+  height: 1rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -254,20 +281,7 @@ a.button:hover {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #ONE-OFF
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.intro-logo svg {
-  display: inline;
-  height: 1rem;
-  position: relative;
-  top: 0.7px;
-}
-.intro-logo svg path, .intro-logo svg rect {
-  fill: #E9529D;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #TESTING
+      #LAYOUT #OVERLAY FOR PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .overlay {
   position: absolute;
@@ -292,28 +306,19 @@ a.button:hover {
   width: 100%;
   height: 100%;
 }
-.overlay p {
-  color: #ffffff;
+
+.project-desc {
   position: absolute;
   bottom: 1rem;
   width: 350px;
-  font-family: "Open Sans", sans-serif;
-  font-size: .875rem;
 }
 
-.project-description {
-  display: inline-block;
-  padding-bottom: 1.2rem;
-  line-height: 1.2rem;
-}
-
-.project-description-title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1.2rem;
+.project-desc__title {
   padding-bottom: 0.5rem;
-  display: inline-block;
+}
+
+.project-desc__text {
+  padding-bottom: 1.2rem;
 }
 
 .project--overlay:hover .overlay {
@@ -321,5 +326,12 @@ a.button:hover {
   transition: 900ms;
   transition-timing-function: ease-in-out;
 }
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #ONE-OFF
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /*# sourceMappingURL=main.css.map */

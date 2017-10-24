@@ -57,8 +57,6 @@ $grid-margin: 30px;
 
 
 
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #BETTER BOX MODEL
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -126,6 +124,20 @@ footer {
   color: $color-neutral-medium;
 }
 
+.project-desc__title {
+  color: $color-background;
+  font-family: $font-nav;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.project-desc__text {
+  color: $color-background;
+  font-size: .875rem;
+}
+
+
 
 
 
@@ -133,7 +145,9 @@ footer {
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-a, nav a svg path {
+a, 
+nav a svg path,
+footer a svg path {
   @include hover-transition;
 }
 
@@ -169,12 +183,12 @@ a.button:link {
   text-decoration: none;
 }
 
-a.button:visited {
-  color: $color-background;
-}
-
 a.button:hover {
   color: $color-primary1;
+}
+
+a.button:visited {
+  color: $color-background;
 }
 
 
@@ -184,6 +198,14 @@ a.button:hover {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #COMPONENTS (SHARED)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* ************ #Logo ************ */
+
+.logo {
+  svg path, svg rect {
+    fill: $color-primary1;
+  }
+}
 
 /* ************ #Social icons ************ */
 
@@ -238,17 +260,16 @@ a.button:hover {
   left: 1.2rem;
   transform: rotate(90deg);
   transform-origin: bottom left;
+}
 
-  // #TODO consider changing or attaching to a logo class
-  svg {
-      height: 16px;
-  }
+svg.logo--menu {
+    height: 16px;
 }
 
 .c-social--nav {
   position: fixed;
   bottom: 1.5rem;
-  left: 1.4rem;
+  left: 1.2rem;
   z-index: 1;
 }
 
@@ -269,6 +290,13 @@ a.button:hover {
 
 .header__intro {
   width: calc(50% - 30px);
+}
+
+.logo--intro {  
+  position: relative; 
+  top: 0.7px;
+  //display:inline; 
+  height: 1rem; 
 }
 
 
@@ -373,28 +401,7 @@ h2 {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #ONE-OFF
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.intro-logo {  
-  svg {
-      display:inline; 
-      height: 1rem; 
-      position: relative; 
-      top: 0.7px;
-  }
-
-  svg path, svg rect {
-      fill: $color-primary1;
-  }
-}
-
-
-
-
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #TESTING
+      #LAYOUT #OVERLAY FOR PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .overlay {
@@ -418,38 +425,42 @@ h2 {
     display: block;
     width: 100%;
     height: 100%;
-  }
+  }  
+}
 
-  p {
-  color: $color-background;
+.project-desc {
   position: absolute;
   bottom: 1rem;
   width: 350px;
-  font-family: $font-body;
-  font-size: .875rem;
-
-        
-  }
 }
 
-
-
-.project-description {
-  display: inline-block;
-  padding-bottom: 1.2rem;
-  line-height: 1.2rem;
-}
-
-.project-description-title {
-  font-family: $font-nav;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 1.2rem;
+.project-desc__title {
   padding-bottom: 0.5rem;
-  display: inline-block;
+}
+
+.project-desc__text {
+  padding-bottom: 1.2rem;
 }
 
 .project--overlay:hover .overlay { 
   opacity: 1;
   @include hover-transition;
 }
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #ONE-OFF
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
