@@ -38,7 +38,7 @@ $grid-margin: 30px;
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 @mixin hover-transition {
-    transition: 900ms;
+    transition: 400ms;
     transition-timing-function: ease-in-out;
 }
 
@@ -352,8 +352,10 @@ svg.logo--menu {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #TODO need to take out of this and add to a container */
-h2 {
-  //margin-left: $grid-margin-half;
+main {
+  h2 {
+    margin-left: $grid-margin-half;
+  }
 }
 
 /* container for projects on home page */
