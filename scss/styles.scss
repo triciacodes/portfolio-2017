@@ -113,19 +113,18 @@ img, embed, object, video {
 body {
   margin: auto;
   padding-top: 2rem;
-  @include media-query4 {
-    padding-top: 7rem;
-  }
-  //
   color: $color-neutral-dark;
   font-family: $font-body;
   font-weight: $font-weight-regular;
   line-height: 1.6;
-  //
   background-color: $color-background;
   border-top: 0.5rem solid $color-primary2;
+  @include media-query4 {
+    padding-top: 7rem;
+  }
 }
 
+/* container for header and content */
 .c-main {
   margin: auto;
   width: 100%;
@@ -157,13 +156,11 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: $font-weight-heavy;
-}
-
-@include media-query3 {
-  h2 {
+  @include media-query3 {
     font-size: 2.25rem;
   }
-} 
+}
+
 
 footer {
   color: $color-neutral-medium;
@@ -269,7 +266,6 @@ a.button:visited {
   li {
     display: inline-block;
     padding-right: 2rem;
-    //
     color: $color-neutral-medium;
     font-family: $font-nav;
     font-size: .875rem;
@@ -339,8 +335,8 @@ svg.logo--menu {
   }
 }
 
+// #TODO come back to this, adjust size
 .header__intro {
-
   width: 100%;
   @include media-query3 {
     width: calc(50% - 30px);
@@ -350,7 +346,6 @@ svg.logo--menu {
 .logo--intro {  
   position: relative; 
   top: 0.7px;
-  //display:inline; 
   height: 1rem; 
 }
 
@@ -440,7 +435,7 @@ svg.logo--menu {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #PROJECTS
+      #LAYOUT #PROJECTS #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* #TODO need to take out of this and add to a container */
@@ -450,63 +445,42 @@ main {
   }
 }
 
-/* container for projects on home page */
-.c-projects {
+.c-projects {  /*  outer container for ALL projects on home page */
   display: flex;
   flex-wrap: wrap;
+  
   @include media-query3 {
-    margin-bottom: 3rem;
+    margin-bottom: 3rem; /* margin between bottom of content and footer */
   }
   @include media-query4 {
-    margin-bottom: 6rem;
+    margin-bottom: 6rem; /* margin between bottom of content and footer */
   }
 }
-
-
 
 /* projects are full width on mobile-size screens */
-.project-block {
+.project__block {
   width: 100%;
+  @include media-query5 {
+      margin: $grid-margin-half; /* space between projects */
+  }
 }
 
-@include media-query3 {
-  /* space between projects */
-  .project__block {
-    margin: 5px;
-  }
-
-  /* adds bottom margin to project that has a shared
-   block container with another project */
-  .project--margin {
+/* adds bottom margin to project that has a shared
+block container with another project */
+.project--margin {
+  @include media-query3 {
     margin-bottom: 10px;
   }
-}
-
-@include media-query4 {
-  /* space between projects */
-  .project__block {
-    margin: 10px;
-  }
-
-  /* adds bottom margin to project that has a shared
-   block container with another project */
-  .project--margin {
+  @include media-query4 {
     margin-bottom: 20px;
   }
-}
-
-@include media-query5 {
-  /* space between projects */
-  .project__block {
-    margin: $grid-margin-half;
-  }
-
-  /* adds bottom margin to project that has a shared
-   block container with another project */
-  .project--margin {
+  @include media-query5 {
     margin-bottom: $grid-margin;
   }
 }
+
+
+
 
 @include media-query3 {
 

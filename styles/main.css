@@ -37,6 +37,7 @@ body {
   }
 }
 
+/* container for header and content */
 .c-main {
   margin: auto;
   width: 100%;
@@ -68,12 +69,12 @@ h2 {
   font-style: italic;
   font-weight: 700;
 }
-
 @media screen and (min-width: 38em) {
   h2 {
     font-size: 2.25rem;
   }
 }
+
 footer {
   color: #787878;
 }
@@ -300,70 +301,60 @@ svg.logo--menu {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #PROJECTS
+      #LAYOUT #PROJECTS #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* #TODO need to take out of this and add to a container */
 main h2 {
   margin-left: 15px;
 }
 
-/* container for projects on home page */
 .c-projects {
+  /*  outer container for ALL projects on home page */
   display: flex;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 38em) {
   .c-projects {
     margin-bottom: 3rem;
+    /* margin between bottom of content and footer */
   }
 }
 @media screen and (min-width: 50em) {
   .c-projects {
     margin-bottom: 6rem;
+    /* margin between bottom of content and footer */
   }
 }
 
 /* projects are full width on mobile-size screens */
-.project-block {
+.project__block {
   width: 100%;
 }
-
-@media screen and (min-width: 38em) {
-  /* space between projects */
+@media screen and (min-width: 63em) {
   .project__block {
-    margin: 5px;
+    margin: 15px;
+    /* space between projects */
   }
+}
 
-  /* adds bottom margin to project that has a shared
-   block container with another project */
+/* adds bottom margin to project that has a shared
+block container with another project */
+@media screen and (min-width: 38em) {
   .project--margin {
     margin-bottom: 10px;
   }
 }
 @media screen and (min-width: 50em) {
-  /* space between projects */
-  .project__block {
-    margin: 10px;
-  }
-
-  /* adds bottom margin to project that has a shared
-   block container with another project */
   .project--margin {
     margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 63em) {
-  /* space between projects */
-  .project__block {
-    margin: 15px;
-  }
-
-  /* adds bottom margin to project that has a shared
-   block container with another project */
   .project--margin {
     margin-bottom: 30px;
   }
 }
+
 @media screen and (min-width: 38em) {
   /* do not remove inner container class -- this makes the overlay go 
      over single projects only */
