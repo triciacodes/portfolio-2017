@@ -326,59 +326,62 @@ main h2 {
   }
 }
 
-/* projects are full width on mobile-size screens */
 .project__block {
   width: 100%;
-}
-@media screen and (min-width: 63em) {
-  .project__block {
-    margin: 15px;
-    /* space between projects */
-  }
+  /* projects full-width on mobile */
 }
 
-/* adds bottom margin to project that has a shared
-block container with another project */
+/* creates size of containers for project grid */
 @media screen and (min-width: 38em) {
-  .project--margin {
-    margin-bottom: 10px;
-  }
-}
-@media screen and (min-width: 50em) {
-  .project--margin {
-    margin-bottom: 20px;
-  }
-}
-@media screen and (min-width: 63em) {
-  .project--margin {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 38em) {
-  /* do not remove inner container class -- this makes the overlay go 
-     over single projects only */
-  .project__block,
-  .project-container-inner {
-    position: relative;
-  }
-
   /* these styles create the grid on larger screens */
   .project__block:nth-child(1),
   .project__block:nth-child(4) {
-    width: calc(60% - 30px);
+    width: calc(58.5%);
   }
 
   .project__block:nth-child(2),
   .project__block:nth-child(5) {
-    width: calc(40% - 30px);
+    width: calc(38.5%);
   }
 
   .project__block:nth-child(3) {
-    width: calc(100% - 30px);
+    width: calc(100%);
   }
 }
-/* end media-query3 for project grid */
+/* end media query for size of containers for project grid */
+/* this section handles the margins between projects only */
+@media screen and (min-width: 38em) {
+  .project__block--margin-l {
+    margin-left: 1.5%;
+    /* class appended to project on left side of column */
+  }
+
+  .project__block--margin-r {
+    margin-right: 1.5%;
+    /* class appended to project on right side of column */
+  }
+
+  .project__block {
+    margin-bottom: 3%;
+    /* margin for projects to match left/right */
+  }
+
+  /* adds bottom margin to project that has a shared
+  block container with another project */
+  .project__block--margin-b {
+    margin-bottom: 3%;
+    /* margin for projects to match left/right */
+  }
+}
+/* end media query for margins between projects */
+@media screen and (min-width: 38em) {
+  /* do not remove inner container class -- this makes the overlay go 
+      over single projects only */
+  .project__block,
+  .project-container-inner {
+    position: relative;
+  }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #OVERLAY FOR PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
