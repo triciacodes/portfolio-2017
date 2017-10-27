@@ -479,7 +479,7 @@ main {
     width: calc(100%);
   }
 
-} /* end media query for size of containers for project grid */
+} /* end media query */
 
 /* this section handles the margins between projects only */
 @include media-query3 {
@@ -499,10 +499,12 @@ main {
   /* adds bottom margin to project that has a shared
   block container with another project */
   .project__block--margin-b {
-    margin-bottom: 3%; /* margin for projects to match left/right */
+    margin-bottom: 5.13%; /* margin for projects to match left/right */
+                          /* this was converted to take up same space */
+                          /* 3% * 1.71 equals same width as a 100% project */
   }
 
-} /* end media query for margins between projects */
+} /* end media query */
 
 @include media-query3 {
     
