@@ -40,7 +40,7 @@ body {
 /* container for header and content */
 .c-main {
   margin: auto;
-  width: 100%;
+  width: 92%;
 }
 @media screen and (min-width: 50em) {
   .c-main {
@@ -48,6 +48,32 @@ body {
   }
 }
 
+/* #TODO remove these temp styles later */
+@media screen and (max-width: 25.2em) {
+  body {
+    border-top: 0.5rem solid lightseagreen;
+  }
+}
+@media screen and (min-width: 25.2em) {
+  body {
+    border-top: 0.5rem solid greenyellow;
+  }
+}
+@media screen and (min-width: 37em) {
+  body {
+    border-top: 0.5rem solid yellow;
+  }
+}
+@media screen and (min-width: 50em) {
+  body {
+    border-top: 0.5rem solid orange;
+  }
+}
+@media screen and (min-width: 63em) {
+  body {
+    border-top: 0.5rem solid orangered;
+  }
+}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -55,7 +81,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .intro {
     font-size: 1.125rem;
     line-height: 2;
@@ -69,7 +95,7 @@ h2 {
   font-style: italic;
   font-weight: 700;
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   h2 {
     font-size: 2.25rem;
   }
@@ -212,7 +238,7 @@ svg.logo--menu {
   justify-content: flex-end;
   margin: 15px;
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .c-header {
     margin-bottom: 7rem;
   }
@@ -221,9 +247,9 @@ svg.logo--menu {
 .header__intro {
   width: 100%;
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .header__intro {
-    width: calc(50% - 30px);
+    width: calc(58.5%);
   }
 }
 
@@ -252,7 +278,7 @@ svg.logo--menu {
     width: 75%;
   }
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .c-footer > div:nth-child(1), .c-footer > div:nth-child(3) {
     width: 80%;
   }
@@ -262,7 +288,7 @@ svg.logo--menu {
     width: 25%;
   }
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .c-footer > div:nth-child(2), .c-footer > div:nth-child(4) {
     width: 20%;
   }
@@ -308,7 +334,7 @@ svg.logo--menu {
   display: flex;
   flex-wrap: wrap;
 }
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   .c-projects {
     margin-bottom: 3rem;
     /* margin between bottom of content and footer */
@@ -323,11 +349,11 @@ svg.logo--menu {
 
 .project__block {
   width: 100%;
-  /* projects full-width on mobile */
+  /* projects full-width breakpoint 1 & 2 */
 }
 
 /* creates size of containers for project grid */
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   /* these styles create the grid on larger screens */
   .project__block:nth-child(1),
   .project__block:nth-child(4) {
@@ -345,7 +371,18 @@ svg.logo--menu {
 }
 /* end media query */
 /* this section handles the margins between projects only */
-@media screen and (min-width: 38em) {
+.project__block {
+  margin-bottom: 1rem;
+  /* margin for bottom of projects */
+}
+
+/* adds bottom margin to project that has a shared
+  block container with another project */
+.project__block--margin-b {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 37em) {
   .project__block--margin-l {
     margin-left: 1.5%;
     /* class appended to project on left side of column */
@@ -372,7 +409,7 @@ svg.logo--menu {
   }
 }
 /* end media query */
-@media screen and (min-width: 38em) {
+@media screen and (min-width: 37em) {
   /* do not remove inner container class -- this makes the overlay go 
       over single projects only */
   .project__block,
@@ -397,6 +434,8 @@ svg.logo--menu {
   opacity: 0;
   /* transparent pngs */
   /* to link to projects */
+  /* #TODO remove this when you work on overlay */
+  display: none;
 }
 .overlay img {
   position: absolute;
