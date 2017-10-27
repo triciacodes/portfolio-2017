@@ -303,11 +303,6 @@ svg.logo--menu {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #PROJECTS #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* #TODO need to take out of this and add to a container */
-main h2 {
-  margin-left: 15px;
-}
-
 .c-projects {
   /*  outer container for ALL projects on home page */
   display: flex;
@@ -370,9 +365,10 @@ main h2 {
   block container with another project */
   .project__block--margin-b {
     margin-bottom: 5.13%;
-    /* margin for projects to match left/right */
-    /* this was converted to take up same space */
-    /* 3% * 1.71 equals same width as a 100% project */
+    /* margin for projects to match left/right 3% */
+    /* this was converted to take up same space as 3% width */
+    /* 3% * 1.71 = 5.13% -- same margin as a 100% project */
+    /* 58.5% / 100 to get the 1.71 figure */
   }
 }
 /* end media query */
