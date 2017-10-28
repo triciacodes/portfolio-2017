@@ -499,7 +499,6 @@ svg.logo--menu {
   /* transparent pngs */
   /* to link to projects */
   /* #TODO remove this when you work on overlay */
-  display: none;
 }
 .overlay img {
   position: absolute;
