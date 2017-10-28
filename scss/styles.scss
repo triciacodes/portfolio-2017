@@ -134,6 +134,7 @@ body {
 }
 
 /* #TODO remove these temp styles later */
+/* 
 @include media-query1 {
   body {border-top: 0.5rem solid lightseagreen}
 }
@@ -149,6 +150,7 @@ body {
 @include media-query5 {
   body {border-top: 0.5rem solid orangered}
 }
+*/
 
 
 
@@ -156,6 +158,10 @@ body {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+p {
+  padding-bottom: 1.4rem;
+}
 
 .intro {
   font-size: 1rem;
@@ -182,6 +188,9 @@ footer {
   font-size: 14px;
   @include media-query3 {
     font-size: 16px;
+  }
+  p {
+    padding-bottom: 0rem;
   }
 }
 
@@ -330,10 +339,15 @@ a.button:visited {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .nav-links__main-menu {
+  width: 92%;
+  margin: auto;
+  margin-bottom: 6rem;
+
   @include media-query4 {
     position: fixed;
     top: .5rem;
     left: 1.2rem;
+    width: auto;
     transform: rotate(90deg);
     transform-origin: bottom left;
   }
@@ -344,7 +358,9 @@ svg.logo--menu {
 }
 
 .c-social--nav {
+  display: none;     /* hides social links from nav bar small screens */
   @include media-query4 {
+    display: initial;
     position: fixed;
     bottom: 1.5rem;
     left: 1.2rem;
@@ -364,6 +380,9 @@ svg.logo--menu {
   display: flex;
   justify-content: flex-end;
   @include media-query3 {
+    margin-bottom: 5rem;
+  }
+  @include media-query4 {
     margin-bottom: 7rem;
   }
 }
@@ -371,6 +390,7 @@ svg.logo--menu {
 // #TODO come back to this, adjust size
 .header__intro {
   width: 100%;
+  margin-bottom: 2em;
   @include media-query3 {
     width: 58.5%;
   }

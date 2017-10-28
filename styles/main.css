@@ -49,34 +49,30 @@ body {
 }
 
 /* #TODO remove these temp styles later */
-@media screen and (max-width: 25.2em) {
-  body {
-    border-top: 0.5rem solid lightseagreen;
-  }
+/* 
+@include media-query1 {
+  body {border-top: 0.5rem solid lightseagreen}
 }
-@media screen and (min-width: 25.2em) {
-  body {
-    border-top: 0.5rem solid greenyellow;
-  }
+@include media-query2 {
+  body {border-top: 0.5rem solid greenyellow}
 }
-@media screen and (min-width: 40em) {
-  body {
-    border-top: 0.5rem solid yellow;
-  }
+@include media-query3 {
+  body {border-top: 0.5rem solid yellow}
 }
-@media screen and (min-width: 50em) {
-  body {
-    border-top: 0.5rem solid orange;
-  }
+@include media-query4 {
+  body {border-top: 0.5rem solid orange}
 }
-@media screen and (min-width: 63em) {
-  body {
-    border-top: 0.5rem solid orangered;
-  }
+@include media-query5 {
+  body {border-top: 0.5rem solid orangered}
 }
+*/
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+p {
+  padding-bottom: 1.4rem;
+}
+
 .intro {
   font-size: 1rem;
   line-height: 1.7;
@@ -109,6 +105,9 @@ footer {
   footer {
     font-size: 16px;
   }
+}
+footer p {
+  padding-bottom: 0rem;
 }
 
 .project-desc__title {
@@ -237,11 +236,17 @@ a.button:visited {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.nav-links__main-menu {
+  width: 92%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
 @media screen and (min-width: 50em) {
   .nav-links__main-menu {
     position: fixed;
     top: .5rem;
     left: 1.2rem;
+    width: auto;
     transform: rotate(90deg);
     transform-origin: bottom left;
   }
@@ -251,8 +256,13 @@ svg.logo--menu {
   height: 1em;
 }
 
+.c-social--nav {
+  display: none;
+  /* hides social links from nav bar small screens */
+}
 @media screen and (min-width: 50em) {
   .c-social--nav {
+    display: initial;
     position: fixed;
     bottom: 1.5rem;
     left: 1.2rem;
@@ -269,12 +279,18 @@ svg.logo--menu {
 }
 @media screen and (min-width: 40em) {
   .c-header {
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 50em) {
+  .c-header {
     margin-bottom: 7rem;
   }
 }
 
 .header__intro {
   width: 100%;
+  margin-bottom: 2em;
 }
 @media screen and (min-width: 40em) {
   .header__intro {
