@@ -103,6 +103,12 @@ h2 {
 
 footer {
   color: #787878;
+  font-size: 14px;
+}
+@media screen and (min-width: 40em) {
+  footer {
+    font-size: 16px;
+  }
 }
 
 .project-desc__title {
@@ -118,7 +124,7 @@ footer {
   font-size: .875rem;
 }
 
-.align-right {
+.text-align-right {
   text-align: right;
 }
 
@@ -182,7 +188,7 @@ a.button:visited {
   fill: #787878;
 }
 .social svg {
-  width: 35px;
+  width: 30px;
   /* larger icons on small screens */
 }
 @media screen and (min-width: 50em) {
@@ -191,7 +197,7 @@ a.button:visited {
   }
 }
 .social li {
-  padding-right: 20px;
+  padding-right: 15px;
   /* larger tap targets on small screens */
 }
 @media screen and (min-width: 50em) {
@@ -260,7 +266,6 @@ svg.logo--menu {
 .c-header {
   display: flex;
   justify-content: flex-end;
-  margin: 15px;
 }
 @media screen and (min-width: 40em) {
   .c-header {
@@ -273,7 +278,7 @@ svg.logo--menu {
 }
 @media screen and (min-width: 40em) {
   .header__intro {
-    width: calc(58.5%);
+    width: 58.5%;
   }
 }
 
@@ -293,27 +298,46 @@ svg.logo--menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.5rem;
+  padding: 1.2rem;
   background-color: #EDE94C;
 }
-@media screen and (min-width: 25.2em) {
-  .c-footer > div:nth-child(1), .c-footer > div:nth-child(3) {
-    flex-grow: 2;
-    /* navigation and social icons expand to fill space */
-    min-width: 50%;
-    -webkit-flex: 1 1 50%;
-    /* bug with min-width on ipad */
-  }
-  .c-footer > div:nth-child(2), .c-footer > div:nth-child(4) {
-    min-width: 25%;
-    align-self: flex-end;
+@media screen and (min-width: 40em) {
+  .c-footer {
+    padding: 1.5rem;
   }
 }
-@media screen and (min-width: 25.2em) {
-  .c-footer > div:nth-child(1), .c-footer > div:nth-child(2) {
-    margin-bottom: 2.5rem;
-    /* margin only */
+.c-footer > div:nth-child(1) {
+  flex-grow: 2;
+  /* navigation expands to fill space */
+  min-width: 50%;
+  -webkit-flex: 2 0 50%;
+  /* bug with min-width on ipad */
+}
+.c-footer > div:nth-child(2) {
+  min-width: 25%;
+  align-self: flex-end;
+}
+.c-footer > div:nth-child(3) {
+  flex-grow: 2;
+  /* social icons expand to fill space */
+  min-width: 50%;
+  -webkit-flex: 2 0 50%;
+  /* bug with min-width on ipad */
+}
+.c-footer > div:nth-child(4) {
+  min-width: 100%;
+  -webkit-flex: 1 1 100%;
+  align-self: flex-end;
+}
+@media screen and (min-width: 40em) {
+  .c-footer > div:nth-child(4) {
+    min-width: 25%;
+    -webkit-flex: 1 1 25%;
   }
+}
+.c-footer > div:nth-child(1), .c-footer > div:nth-child(2) {
+  margin-bottom: 2.5rem;
+  /* margin only */
 }
 
 .nav-links--footer {
@@ -328,7 +352,14 @@ svg.logo--menu {
 }
 
 .c-social--footer {
-  align-self: flex-end;
+  align-self: flex-start;
+  order: -1;
+}
+@media screen and (min-width: 40em) {
+  .c-social--footer {
+    order: initial;
+    align-self: flex-end;
+  }
 }
 
 .social__list--footer {
