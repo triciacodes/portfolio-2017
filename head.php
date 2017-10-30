@@ -31,7 +31,7 @@
 
     <div class="nav-links nav-links__main-menu">
       <ul>
-        <li><a href="index.html"><img class="logo  logo--menu" src="img/logo-tricia.svg"></a></li>
+        <li><a href="index.php"><img class="logo  logo--menu" src="img/logo-tricia.svg"></a></li>
         <li><a href="about/">About</a>
         </li>
         <li><a href="projects/">Project</a>

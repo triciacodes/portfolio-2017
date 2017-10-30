@@ -7,7 +7,7 @@
     
   <main>
 
-    <h2>Featured Project</h2>
+    <h2>Featured Projects</h2>
 
     <div class="c-projects">
 
@@ -16,7 +16,7 @@
         <img src="img/project-earthquake-prep.png" alt="earthquake prep cover" class="img-project">
         <div class="overlay">
           <div class="project-desc">
-            <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+            <a href="earthquake-prep.php"><img src="img/transparent.png"></a>
             <p class="project-desc__title">
               Earthquake Preparation
             </p>
@@ -35,7 +35,7 @@
         <img src="img/project-mars.png" alt="Mars travel poster" class="img-project">
         <div class="overlay">
           <div class="project-desc">
-            <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+            <a href="http://tricia.ws/psu/341/project3/"><img src="img/transparent.png"></a>
             <p class="project-desc__title">
               Mars Travel Poster
             </p>
@@ -54,14 +54,14 @@
         <img src="img/project-be-honest.png" alt="Be Honest promo" class="img-project">
         <div class="overlay">
           <div class="project-desc">
-            <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+            <a href="be-honest.php"><img src="img/transparent.png"></a>
             <p class="project-desc__title">
               Be Honest Student Showcase
             </p>
             <p class="project-desc__text">
               Responsive website for Portland State's graphic design student group. Here is another paragraph to test out how this thing works with longer paragraph.
             </p>
-            <a href="projects/creative-coding/" class="button">More Info</a>
+            <a href="be-honest.php" class="button">More Info</a>
             <a href="http://psu.gd/fogd" class="button">View Live</a>
             <a href="http://github.com/tricialeach/project" class="button">View Code</a>
           </div>  
@@ -75,7 +75,7 @@
           <img src="img/project-fogd.png" alt="Friends of Graphic Design website">
           <div class="overlay">
             <div class="project-desc">
-              <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+              <a href="fogd-website.php"><img src="img/transparent.png"></a>
               <p class="project-desc__title">
                 FoGD Website
               </p>
@@ -94,7 +94,7 @@
           <img src="img/project-creative-coding.png" alt="Creative coding example">
           <div class="overlay">
             <div class="project-desc">
-              <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+              <a href="creative-coding.php"><img src="img/transparent.png"></a>
               <p class="project-desc__title">
                 Creative Coding
               </p>
@@ -116,7 +116,7 @@
           <img src="img/project-time-travel-app.png" alt="Time travel app mockup">
           <div class="overlay">
             <div class="project-desc">
-              <a href="projects/creative-coding/"><img src="img/transparent.png"></a>
+              <a href="time-travel-app.php"><img src="img/transparent.png"></a>
               <p class="project-desc__title">
                 Time Travel App
               </p>

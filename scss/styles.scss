@@ -628,3 +628,22 @@ svg.logo--menu {
   opacity: 1;
   @include hover-transition;
 }
+
+
+
+// styles for project pages
+.project-info {
+  width: 50%;
+  padding: 2em 0;
+}
+
+.two-per {
+  img {
+    width: 48%;
+    display: inline-block;
+  }
+}
+
+.fifty {
+  width: 50%;
+}
