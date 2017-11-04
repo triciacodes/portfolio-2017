@@ -29,7 +29,7 @@
 
   <nav>
 
-    <div class="nav-links nav-links__main-menu">
+    <div id="nav-links" class="nav-links nav-links__main-menu">
       <ul>
         <li><a href="index.php"><img class="logo  logo--menu" src="img/logo-tricia.svg"></a></li>
         <li><a href="about/">About</a>
@@ -42,7 +42,7 @@
     </div>  
 
 
-    <div class="social  c-social--nav">
+    <div id="c-social--nav" class="social  c-social--nav">
       <ul>
         <li class="social__icon  social__icon--header">
           <a href="https://github.com/tricialeach"><img src="img/social-icon-github.svg"></a>

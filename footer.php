@@ -2,7 +2,7 @@
 
 <!-- - - - - - - - - - - - - - - - #FOOTER - - - - - - - - - - - - - - - -->
     
-<footer class="c-footer">
+<footer id="c-footer" class="c-footer">
 
     <div class="nav-links nav-links--footer">
       <ul>

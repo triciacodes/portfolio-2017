@@ -9,6 +9,51 @@
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #HELPER
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.js-fade-out {
+  animation-name: fade-out;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.js-fade-in {
+  animation-name: fade-in;
+  animation-duration: 600ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #BASIC
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 html {
@@ -240,6 +285,8 @@ a.button:visited {
   width: 92%;
   margin: auto;
   margin-bottom: 6rem;
+  transition: 400ms;
+  transition-timing-function: ease-in-out;
 }
 @media screen and (min-width: 50em) {
   .nav-links__main-menu {
@@ -499,6 +546,7 @@ svg.logo--menu {
   /* transparent pngs */
   /* to link to projects */
   /* #TODO remove this when you work on overlay */
+  display: none;
 }
 .overlay img {
   position: absolute;

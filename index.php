@@ -13,7 +13,7 @@
 
     
       <div class="project__block  project--overlay  project__block--margin-r"> <!-- start earthquake project -->
-        <img src="img/project-earthquake-prep.png" alt="earthquake prep cover" class="img-project">
+        <a href="earthquake-prep.php"><img src="img/project-earthquake-prep.png" alt="earthquake prep cover" class="img-project"></a>
         <div class="overlay">
           <div class="project-desc">
             <a href="earthquake-prep.php"><img src="img/transparent.png"></a>
@@ -32,7 +32,7 @@
 
 
       <div class="project__block  project--overlay  project__block--margin-l"> <!-- start mars project -->
-        <img src="img/project-mars.png" alt="Mars travel poster" class="img-project">
+      <a href="http://tricia.ws/psu/341/project3/"><img src="img/project-mars.png" alt="Mars travel poster" class="img-project"></a>
         <div class="overlay">
           <div class="project-desc">
             <a href="http://tricia.ws/psu/341/project3/"><img src="img/transparent.png"></a>
@@ -51,7 +51,7 @@
 
 
       <div class="project__block  project--overlay"> <!-- start Be Honest project -->
-        <img src="img/project-be-honest.png" alt="Be Honest promo" class="img-project">
+        <a href="be-honest.php"><img src="img/project-be-honest.png" alt="Be Honest promo" class="img-project"></a>
         <div class="overlay">
           <div class="project-desc">
             <a href="be-honest.php"><img src="img/transparent.png"></a>
@@ -72,7 +72,7 @@
       <div class="project__block  project__block--margin-r"> <!-- Combined FoGD/Creative Coding projects -->
 
         <div class="project-container-inner  project--overlay  project__block--margin-b"> <!-- start FoGD project -->
-          <img src="img/project-fogd.png" alt="Friends of Graphic Design website">
+          <a href="fogd-website.php"><img src="img/project-fogd.png" alt="Friends of Graphic Design website"></a>
           <div class="overlay">
             <div class="project-desc">
               <a href="fogd-website.php"><img src="img/transparent.png"></a>
@@ -91,7 +91,7 @@
 
 
         <div class="project-container-inner  project--overlay"> <!-- start c. coding project -->
-          <img src="img/project-creative-coding.png" alt="Creative coding example">
+          <a href="creative-coding.php"><img src="img/project-creative-coding.png" alt="Creative coding example"></a>
           <div class="overlay">
             <div class="project-desc">
               <a href="creative-coding.php"><img src="img/transparent.png"></a>
@@ -113,7 +113,7 @@
 
       <div class="project__block  project__block--margin-l"> <!-- start time travel project -->
         <div class="project-container-inner  project--overlay">
-          <img src="img/project-time-travel-app.png" alt="Time travel app mockup">
+          <a href="time-travel-app.php"><img src="img/project-time-travel-app.png" alt="Time travel app mockup"></a>
           <div class="overlay">
             <div class="project-desc">
               <a href="time-travel-app.php"><img src="img/transparent.png"></a>
