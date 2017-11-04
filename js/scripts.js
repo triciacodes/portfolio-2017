@@ -32,23 +32,23 @@
 // and add js-fade-in class
 
 function hideNav() {
-
-  var navLinks = document.getElementById('nav-links');
-  var navSocial = document.getElementById('c-social--nav');
+  var nav = document.querySelectorAll("#nav-links, #c-social--nav");
   var footer = document.getElementById('c-footer');
 
-  var screenHeight = window.innerHeight;
-  var scrollYPosition = window.scrollY;
-  var docHeight = document.body.offsetHeight;
-  var footerHeight = footer.offsetHeight; 
+  var scrollHeight = window.scrollY + window.innerHeight;
+  var topOfFooter = document.body.offsetHeight - footer.offsetHeight;
 
-  if ((scrollYPosition + screenHeight) > (docHeight - footerHeight)) {
-    navLinks.classList.add('js-fade-out');
-    navSocial.classList.add('js-fade-out');
-  } else if ((scrollYPosition + screenHeight) < (docHeight - footerHeight)) {
-    if (navLinks.classList.contains('js-fade-out')) {
-      navLinks.classList.remove('js-fade-out');
-      navLinks.classList.add('js-fade-in');
+  if (scrollHeight > topOfFooter) {
+    for (i = 0; i < nav.length; i++) {
+      nav[i].classList.add('js-fade-out');
+      nav[i].classList.remove('js-fade-in');
+    }
+  } else if (scrollHeight < topOfFooter) {
+    for (i = 0; i < nav.length; i++) {
+      if (nav[i].classList.contains('js-fade-out')) {
+        nav[i].classList.remove('js-fade-out');
+        nav[i].classList.add('js-fade-in');
+      }
     }
   }
 };
