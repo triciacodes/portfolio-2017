@@ -11,48 +11,6 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #HELPER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.js-fade-out {
-  animation-name: fade-out;
-  animation-duration: 600ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-.js-fade-in {
-  animation-name: fade-in;
-  animation-duration: 600ms;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-    visibility: hidden;
-  }
-  10% {
-    opacity: 0;
-    visibility: visible;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #BASIC
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -93,24 +51,6 @@ body {
   }
 }
 
-/* #TODO remove these temp styles later */
-/* 
-@include media-query1 {
-  body {border-top: 0.5rem solid lightseagreen}
-}
-@include media-query2 {
-  body {border-top: 0.5rem solid greenyellow}
-}
-@include media-query3 {
-  body {border-top: 0.5rem solid yellow}
-}
-@include media-query4 {
-  body {border-top: 0.5rem solid orange}
-}
-@include media-query5 {
-  body {border-top: 0.5rem solid orangered}
-}
-*/
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -589,6 +529,52 @@ svg.logo--menu {
 
 .fifty {
   width: 50%;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #JAVASCRIPT
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.js-fade-out {
+  animation-name: fade-out;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.js-fade-in {
+  animation-name: fade-in;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  10% {
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
