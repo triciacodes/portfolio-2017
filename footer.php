@@ -55,10 +55,9 @@
     <!-- Obtain jQuery updates here https://developers.google.com/speed/libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- inliner.js converts all svgs to inline code -->
-    <script src="js/inliner.js"></script>
+  <script src="js/inliner.js"></script>
     <!-- my JS & jQuery -->
-	<script src="js/scripts.js"></script>
-    
+  <script src="js/scripts.js"></script>
 
 </body>
 </html>
