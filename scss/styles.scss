@@ -257,7 +257,7 @@ a.button:visited {
 
 .logo {
   svg path, svg rect {
-    fill: $color-primary1;
+    fill: $color-primary2;
   }
 }
 
@@ -373,15 +373,10 @@ svg.logo--menu {
 .header__intro {
   width: 100%;
   margin-bottom: 2em;
+  position: relative;
   @include media-query3 {
     width: 58.5%;
   }
-}
-
-.logo--intro {  
-  position: relative; 
-  top: 0.7px;
-  height: 1rem; 
 }
 
 

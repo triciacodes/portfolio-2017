@@ -164,7 +164,7 @@ a.button:visited {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* ************ #Logo ************ */
 .logo svg path, .logo svg rect {
-  fill: #E9529D;
+  fill: #EDE94C;
 }
 
 /* ************ #Social icons ************ */
@@ -278,17 +278,12 @@ svg.logo--menu {
 .header__intro {
   width: 100%;
   margin-bottom: 2em;
+  position: relative;
 }
 @media screen and (min-width: 40em) {
   .header__intro {
     width: 58.5%;
   }
-}
-
-.logo--intro {
-  position: relative;
-  top: 0.7px;
-  height: 1rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
