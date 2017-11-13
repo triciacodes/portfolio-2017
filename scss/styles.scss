@@ -9,7 +9,7 @@ $color-neutral-light: #E6E1DA;
 $color-neutral-medium: #787878;
 $color-neutral-dark: #454545;
 $color-primary1: #E9529D;
-$color-primary2: #EDE94C;
+$color-primary2: #EDEA36;
 $color-accent-light: #F4C341;
 $color-accent-medium: #F6A138;
 $color-accent-dark: #F37A72;
@@ -17,6 +17,7 @@ $color-accent-dark: #F37A72;
 $font-body: 'Open Sans', sans-serif;
 $font-secondary: 'Open Sans', sans-serif;
 $font-nav: 'Montserrat', sans-serif;
+$font-branding: "filson-pro", 'Open Sans', sans-serif;
 //
 $font-weight-regular: 400;
 $font-weight-medium: 600;
@@ -192,7 +193,16 @@ footer {
   text-align: right;
 }
 
+.branding {
+  color: $color-primary1;
+  font-family: $font-branding;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
 
+.branding--nav {
+  letter-spacing: 0;
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -267,6 +277,7 @@ a.button:visited {
   svg path {
     fill: $color-neutral-medium;
   }
+
   svg {
     width: 30px;     /* larger icons on small screens */
     @include media-query4 {
@@ -342,7 +353,7 @@ svg.logo--menu {
 .c-social--nav {
   display: none;     /* hides social links from nav bar small screens */
   @include media-query4 {
-    display: initial;
+    // display: initial;
     position: fixed;
     bottom: 1.5rem;
     left: 1.2rem;

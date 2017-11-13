@@ -16,7 +16,7 @@
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 html {
   font-size: 16px;
-  background-color: #EDE94C;
+  background-color: #EDEA36;
 }
 
 img, embed, object, video {
@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   background-color: #ffffff;
-  border-top: 0.5rem solid #EDE94C;
+  border-top: 0.5rem solid #EDEA36;
 }
 @media screen and (min-width: 50em) {
   body {
@@ -112,6 +112,17 @@ footer p {
   text-align: right;
 }
 
+.branding {
+  color: #E9529D;
+  font-family: "filson-pro", "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
+.branding--nav {
+  letter-spacing: 0;
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LINKS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -164,7 +175,7 @@ a.button:visited {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* ************ #Logo ************ */
 .logo svg path, .logo svg rect {
-  fill: #EDE94C;
+  fill: #EDEA36;
 }
 
 /* ************ #Social icons ************ */
@@ -214,7 +225,7 @@ a.button:visited {
   font-size: .7rem;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #EDE94C;
+  background-color: #EDEA36;
   border-radius: 3px;
 }
 
@@ -249,7 +260,6 @@ svg.logo--menu {
 }
 @media screen and (min-width: 50em) {
   .c-social--nav {
-    display: initial;
     position: fixed;
     bottom: 1.5rem;
     left: 1.2rem;
@@ -297,7 +307,7 @@ svg.logo--menu {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.2rem;
-  background-color: #EDE94C;
+  background-color: #EDEA36;
 }
 @media screen and (min-width: 40em) {
   .c-footer {

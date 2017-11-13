@@ -14,6 +14,9 @@
 <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
+<!-- TYPEKIT FONTS -->
+  <script src="https://use.typekit.net/kre4nye.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!-- CSS STYLES -->
   <link rel="stylesheet" href="styles/reset.css" />  
   <link rel="stylesheet" href="styles/main.css" />
@@ -31,10 +34,10 @@
 
     <div id="nav-links" class="nav-links nav-links__main-menu">
       <ul>
-        <li><a href="index.php"><img class="logo  logo--menu" src="img/logo-tricia.svg"></a></li>
+        <li><a href="index.php"><span class="branding branding--nav">Tricia</span></a></li>
         <li><a href="about/">About</a>
         </li>
-        <li><a href="projects/">Project</a>
+        <li><a href="projects/">Projects</a>
         </li>
         <li><a href="contact/">Contact</a>
         </li>

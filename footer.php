@@ -18,7 +18,7 @@
     </div>
 
     <div class="text-align-right">
-      <p><img src="img/logo-tricia-leach.svg" alt="Tricia Leach logo" class="logo  logo--footer"></p>
+      <p class="branding">Tricia Leach</p>
       <p>Developer &amp; Designer</p>
     </div>
 
