@@ -27,7 +27,7 @@ img, embed, object, video {
 body {
   margin: auto;
   padding-top: 2rem;
-  color: #454545;
+  color: #484647;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -83,7 +83,7 @@ h2 {
 }
 
 footer {
-  color: #787878;
+  color: #787677;
   font-size: 14px;
 }
 @media screen and (min-width: 40em) {
@@ -147,7 +147,7 @@ a:visited {
 }
 
 nav a:link, nav a:visited, footer a:link, footer a:visited {
-  color: #787878;
+  color: #787677;
   text-decoration: none;
 }
 nav a:hover, footer a:hover {
@@ -180,7 +180,7 @@ a.button:visited {
 
 /* ************ #Social icons ************ */
 .social svg path {
-  fill: #787878;
+  fill: #787677;
 }
 .social svg {
   width: 30px;
@@ -205,7 +205,7 @@ a.button:visited {
 .nav-links li {
   display: inline-block;
   padding-right: 1rem;
-  color: #787878;
+  color: #787677;
   font-family: "Montserrat", sans-serif;
   font-size: .875rem;
   font-weight: 600;
