@@ -1,5 +1,3 @@
-  </div> <!-- end c-main container // header and projects -->
-
 <!-- - - - - - - - - - - - - - - - #FOOTER - - - - - - - - - - - - - - - -->
     
 <footer id="c-footer" class="c-footer">
