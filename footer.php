@@ -40,7 +40,7 @@
     </div>
 
     <div class="text-align-right">
-        <p><a href="mailto:hello@tricialeach.net">hello@tricialeach.net</a></p>
+        <p><a href="mailto:hello@tricialea.ch">hello@tricialea.ch</a></p>
     </div>
 
   </footer> 
