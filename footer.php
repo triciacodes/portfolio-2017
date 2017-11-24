@@ -1,7 +1,10 @@
+</div> <!-- end .content -->
+
 <!-- - - - - - - - - - - - - - - - #FOOTER - - - - - - - - - - - - - - - -->
     
-<footer id="c-footer" class="c-footer">
+<footer class="footer">
 
+  <div id="c-footer" class="c-footer">
     <div class="nav-links nav-links--footer">
       <ul>
         <li><a href="index.html">Home</a>
@@ -41,10 +44,11 @@
         <p><a href="mailto:hello@tricialea.ch">hello@tricialea.ch</a></p>
     </div>
 
-  </footer> 
-    
-    
+  </div> <!-- end .c-footer -->
 
+</footer> 
+    
+    
 
 
 <!-- - - - - - - - - - - - - - - - #JAVASCRIPT - - - - - - - - - - - - - - - --> 

@@ -18,8 +18,8 @@
   <script src="https://use.typekit.net/kre4nye.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
 <!-- CSS STYLES -->
-  <link rel="stylesheet" href="styles/reset.css" />  
-  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="/styles/reset.css" />  
+  <link rel="stylesheet" href="/styles/main.css" />
 </head>
     
     
@@ -30,16 +30,18 @@
     
 <body>
 
+  <div class="content">  
+
   <nav>
 
     <div id="nav-links" class="nav-links nav-links__main-menu">
       <ul>
-        <li><a href="index.php"><span class="branding branding--nav">Tricia</span></a></li>
-        <li><a href="about/">About</a>
+        <li><a href="/index.php"><span class="branding branding--nav">Tricia</span></a></li>
+        <li><a href="/about/">About</a>
         </li>
-        <li><a href="projects/">Projects</a>
+        <li><a href="/projects/">Projects</a>
         </li>
-        <li><a href="contact/">Contact</a>
+        <li><a href="/contact/">Contact</a>
         </li>
       </ul>
     </div>  
