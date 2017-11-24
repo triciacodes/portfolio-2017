@@ -77,12 +77,14 @@ function resizeImg() {
   }
 }
 
+window.addEventListener('resize', resizeImg);
+
+
 
 // when user scrolls to just above the footer, 
 // add a css animation to fade out (js-fade-out)
 // when user scrolls back up page, remove js-fade-out
 // and add js-fade-in class
-window.addEventListener('resize', resizeImg);
 
 function hideNav() {
   var nav = document.querySelectorAll("#nav-links, #c-social--nav");

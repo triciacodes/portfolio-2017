@@ -7,13 +7,13 @@
   <div id="c-footer" class="c-footer">
     <div class="nav-links nav-links--footer">
       <ul>
-        <li><a href="index.html">Home</a>
+        <li><a href="/">Home</a>
         </li>
-        <li><a href="about/">About</a>
+        <li><a href="/about/">About</a>
         </li>
-        <li><a href="projects/">Projects</a>
-        </li>
-        <li><a href="contact/">Contact</a>
+        <!-- <li><a href="/projects/">Projects</a>
+        </li> -->
+        <li><a href="/contact/">Contact</a>
         </li>
       </ul>
     </div>
@@ -41,7 +41,7 @@
     </div>
 
     <div class="text-align-right">
-        <p><a href="mailto:hello@tricialea.ch">hello@tricialea.ch</a></p>
+        <p><a href="mailto:hi@tricialea.ch">hi@tricialea.ch</a></p>
     </div>
 
   </div> <!-- end .c-footer -->
@@ -57,9 +57,9 @@
     <!-- Obtain jQuery updates here https://developers.google.com/speed/libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- inliner.js converts all svgs to inline code -->
-  <script src="js/inliner.js"></script>
+  <script src="/js/inliner.js"></script>
     <!-- my JS & jQuery -->
-  <script src="js/scripts.js"></script>
+  <script src="/js/scripts.js"></script>
 
 </body>
 </html>

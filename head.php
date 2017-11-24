@@ -8,9 +8,9 @@
   <meta name="keywords" content="portfolio, tricia, tricia leach, portland state, graphic design, web developer, web development, html, css, javascript, creative coding" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- FAVICONS -->
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,500i,700i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i" rel="stylesheet">
@@ -36,11 +36,11 @@
 
     <div id="nav-links" class="nav-links nav-links__main-menu">
       <ul>
-        <li><a href="/index.php"><span class="branding branding--nav">Tricia</span></a></li>
+        <li><a href="/"><span class="branding branding--nav">Tricia</span></a></li>
         <li><a href="/about/">About</a>
         </li>
-        <li><a href="/projects/">Projects</a>
-        </li>
+        <!-- <li><a href="/projects/">Projects</a>
+        </li> -->
         <li><a href="/contact/">Contact</a>
         </li>
       </ul>

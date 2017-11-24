@@ -154,7 +154,7 @@ body { min-height: 100%; min-width: 100%; display: table; }
 .content { display: table-row-group; }
 .footer { display: table-footer-group; }
 
-.page-index {
+.page-index, .page-contact {
   @include media-query4 {
     padding-top: 7rem;
   }
@@ -170,8 +170,16 @@ body { min-height: 100%; min-width: 100%; display: table; }
   }
 }
 
+ul {
+  list-style-type: circle; 
+  margin-left: 1.3rem;
+  margin-bottom: 1.3rem;
+}
 
-
+li {
+  line-height: 1.4;
+  padding-bottom: .5rem;
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -197,11 +205,24 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: $font-weight-heavy;
-  line-height: .5;
-  padding-bottom: 1rem;
+  line-height: 1;
+  padding-bottom: 2.5rem;
   @include media-query3 {
     font-size: 2.25rem;
   }
+}
+
+.page-index h2 {
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  color: $color-primary1;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
 }
 
 footer {
@@ -255,16 +276,19 @@ footer a svg path {
 }
 
 a:link {
-    color: $color-accent-medium;
-    text-decoration: none;
+  color: $color-accent-medium;
+  text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
-    color: $color-primary1;
+  color: $color-primary1;
+  font-weight: 700;
 }
 
 a:visited {
-    color: $color-accent-light;
+  color: $color-primary2;
+  font-weight: 700;
 }
 
 nav, footer {
@@ -334,9 +358,13 @@ a.button:visited {
 /* ************ #Navigation links ************ */
 
 .nav-links {
+  ul {
+    margin: 0;
+  }
   li {
     display: inline-block;
     padding-right: 1rem;
+    padding-bottom: 0;
     color: $color-neutral-medium;
     font-family: $font-nav;
     font-size: .875rem;
@@ -363,11 +391,13 @@ a.button:visited {
 
 
 
-
-
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.nav-links {
+  margin-left: 0;
+}
 
 .nav-links__main-menu {
   width: 92%;
@@ -436,6 +466,15 @@ svg.logo--menu {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+footer ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+footer li {
+  padding-bottom: 0;
+}
 
 .c-footer {
   width: 100%;

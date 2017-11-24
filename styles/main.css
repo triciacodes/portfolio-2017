@@ -55,7 +55,7 @@ body {
 }
 
 @media screen and (min-width: 50em) {
-  .page-index {
+  .page-index, .page-contact {
     padding-top: 7rem;
   }
 }
@@ -70,6 +70,17 @@ body {
   .c-main {
     width: 80%;
   }
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+li {
+  line-height: 1.4;
+  padding-bottom: .5rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -96,13 +107,26 @@ h2 {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 700;
-  line-height: .5;
-  padding-bottom: 1rem;
+  line-height: 1;
+  padding-bottom: 2.5rem;
 }
 @media screen and (min-width: 40em) {
   h2 {
     font-size: 2.25rem;
   }
+}
+
+.page-index h2 {
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  color: #E9529D;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  margin-bottom: .8rem;
 }
 
 footer {
@@ -159,14 +183,17 @@ footer a svg path {
 a:link {
   color: #F6A138;
   text-decoration: none;
+  font-weight: 700;
 }
 
 a:hover {
   color: #E9529D;
+  font-weight: 700;
 }
 
 a:visited {
-  color: #F4C341;
+  color: #F1E41D;
+  font-weight: 700;
 }
 
 nav a:link, nav a:visited, footer a:link, footer a:visited {
@@ -225,9 +252,13 @@ a.button:visited {
 }
 
 /* ************ #Navigation links ************ */
+.nav-links ul {
+  margin: 0;
+}
 .nav-links li {
   display: inline-block;
   padding-right: 1rem;
+  padding-bottom: 0;
   color: #787677;
   font-family: "Montserrat", sans-serif;
   font-size: .875rem;
@@ -255,6 +286,10 @@ a.button:visited {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.nav-links {
+  margin-left: 0;
+}
+
 .nav-links__main-menu {
   width: 92%;
   margin: auto;
@@ -322,6 +357,15 @@ svg.logo--menu {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #LAYOUT #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+footer ul {
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+footer li {
+  padding-bottom: 0;
+}
+
 .c-footer {
   width: 100%;
   position: relative;
