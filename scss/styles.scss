@@ -1,6 +1,27 @@
 /* CSS reset in a separate file */
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+//    #TOC
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+// #VARIABLES
+// #MIXINS
+// #TEMP STYLES
+// #BETTER BOX MODEL
+// #HELPER
+// #BASICS
+// #TYPE STYLES
+// #LINKS
+// #COMPONENTS (SHARED)
+// #LAYOUT #MENU(MAIN) #NAVIGATION
+// #LAYOUT #HEADER
+// #LAYOUT #FOOTER
+// #LAYOUT #INDEX #CONTENT
+// #LAYOUT #OVERLAY FOR PROJECTS
+// #LAYOUT #PROJECTS
+// #JAVASCRIPT
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 //    #VARIABLES 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -73,6 +94,9 @@ $breakpoint5: 81em; // 1300 px
 }
 
 
+
+
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 //    #TEMP STYLES
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -86,6 +110,9 @@ $breakpoint5: 81em; // 1300 px
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -125,6 +152,7 @@ body {
 }
 
 /* container for header and content */
+/* this is used on all pages */
 .c-main {
   margin: auto;
   width: 92%;
@@ -481,10 +509,10 @@ svg.logo--menu {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #PROJECTS #CONTENT
+      #LAYOUT #INDEX #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-.c-projects {  /*  outer container for ALL projects on home page */
+.c-projects {  /*  outer container for ALL projects on index page */
   display: flex;
   flex-wrap: wrap;
   @include media-query3 {
@@ -569,7 +597,7 @@ svg.logo--menu {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #OVERLAY FOR PROJECTS
+      #LAYOUT #OVERLAY FOR INDEX PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .overlay {
@@ -619,7 +647,11 @@ svg.logo--menu {
 
 
 
-// styles for project pages
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #PROJECTS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .project-info {
   width: 50%;
   padding: 2em 0;

@@ -41,6 +41,7 @@ body {
 }
 
 /* container for header and content */
+/* this is used on all pages */
 .c-main {
   margin: auto;
   width: 92%;
@@ -383,10 +384,10 @@ svg.logo--menu {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #PROJECTS #CONTENT
+      #LAYOUT #INDEX #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .c-projects {
-  /*  outer container for ALL projects on home page */
+  /*  outer container for ALL projects on index page */
   display: flex;
   flex-wrap: wrap;
 }
@@ -474,7 +475,7 @@ svg.logo--menu {
   }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #OVERLAY FOR PROJECTS
+      #LAYOUT #OVERLAY FOR INDEX PROJECTS
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .overlay {
   position: absolute;
@@ -522,6 +523,9 @@ svg.logo--menu {
   transition-timing-function: ease-in-out;
 }
 
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #LAYOUT #PROJECTS
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 .project-info {
   width: 50%;
   padding: 2em 0;
