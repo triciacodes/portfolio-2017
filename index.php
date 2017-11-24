@@ -13,12 +13,12 @@
 
     
       <div class="project__block  project--overlay  project__block--margin-r"> <!-- start earthquake project -->
-        <a href="earthquake-prep.php"><img id="earthquake-prep-img" src="img/projects/earthquake-prep.jpg" alt="earthquake prep cover" class="img-project"></a>
+        <a href="fresh-website.php"><img id="fresh-website-img" src="img/projects/fresh-website.jpg" alt="Macbook image of website called Fresh" class="img-project"></a>
         <div class="overlay">
           <div class="project-desc">
-            <a href="earthquake-prep.php"><img src="img/transparent.png"></a>
+            <a href="fresh-website.php"><img src="img/transparent.png"></a>
             <p class="project-desc__title">
-              Earthquake Preparation
+              Fresh Website
             </p>
             <p class="project-desc__text">
               Responsive website for Portland State's graphic design student group. Here is another paragraph to test out how this thing works with longer paragraph.
@@ -28,7 +28,7 @@
             <a href="http://github.com/tricialeach/project" class="button">View Code</a>
           </div>  
         </div>
-      </div> <!-- end earthquake project -->
+      </div> <!-- end fresh website project -->
 
 
       <div class="project__block  project--overlay  project__block--margin-l"> <!-- start mars project -->

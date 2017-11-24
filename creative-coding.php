@@ -13,8 +13,10 @@
 
     <div class="c-projects">
 
-    <p><img src="img/project-creative-coding1.gif" alt="Creative coding"></p>
-    <p><img src="img/project-creative-coding2.gif" alt="Creative coding"><br><br><br><br><br></p>
+    <p><img src="img/projects/code.png" alt="Creative coding"></p>
+
+    <p><img src="img/projects/project-creative-coding1.gif" alt="Creative coding"></p>
+    <p><img src="img/projects/project-creative-coding2.gif" alt="Creative coding"><br><br><br><br><br></p>
     
     <p>
     <iframe src="https://player.vimeo.com/video/240512781" width="900" height="506" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

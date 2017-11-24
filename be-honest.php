@@ -14,18 +14,18 @@
 
     <div class="c-projects">
 
-    <p><img src="img/project-be-honest1.jpg" alt="Be Honest"></p>
-    <p><img src="img/project-be-honest2.png" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest1.jpg" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest2.png" alt="Be Honest"></p>
     <p class="two-per">
-      <img class="project__block--margin-r" src="img/project-be-honest3a.png" alt="Be Honest">
-      <img class="project__block--margin-l" src="img/project-be-honest3b.png" alt="Be Honest"><br><br>
-      <img class="project__block--margin-r" src="img/project-be-honest3c.png" alt="Be Honest">
-      <img class="project__block--margin-l" src="img/project-be-honest3d.png" alt="Be Honest">
+      <img class="project__block--margin-r" src="img/projects/project-be-honest3a.png" alt="Be Honest">
+      <img class="project__block--margin-l" src="img/projects/project-be-honest3b.png" alt="Be Honest"><br><br>
+      <img class="project__block--margin-r" src="img/projects/project-be-honest3c.png" alt="Be Honest">
+      <img class="project__block--margin-l" src="img/projects/project-be-honest3d.png" alt="Be Honest">
     </p>
-    <p><img src="img/project-be-honest4.jpg" alt="Be Honest"></p>
-    <p><img src="img/project-be-honest6.jpg" alt="Be Honest"></p>
-    <p><img src="img/project-be-honest7.jpg" alt="Be Honest"></p>
-    <p><img src="img/project-be-honest8.jpg" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest4.jpg" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest6.jpg" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest7.jpg" alt="Be Honest"></p>
+    <p><img src="img/projects/project-be-honest8.jpg" alt="Be Honest"></p>
       
 
     </div> <!-- end projects container -->

@@ -16,7 +16,7 @@
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 html {
   font-size: 16px;
-  background-color: #EDEA36;
+  background-color: #F1E41D;
 }
 
 img, embed, object, video {
@@ -32,7 +32,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   background-color: #ffffff;
-  border-top: 0.5rem solid #EDEA36;
+  border-top: 0.5rem solid #F1E41D;
 }
 @media screen and (min-width: 50em) {
   body {
@@ -175,7 +175,7 @@ a.button:visited {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* ************ #Logo ************ */
 .logo svg path, .logo svg rect {
-  fill: #EDEA36;
+  fill: #F1E41D;
 }
 
 /* ************ #Social icons ************ */
@@ -225,7 +225,7 @@ a.button:visited {
   font-size: .7rem;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: #EDEA36;
+  background-color: #F1E41D;
   border-radius: 3px;
 }
 
@@ -307,7 +307,7 @@ svg.logo--menu {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.2rem;
-  background-color: #EDEA36;
+  background-color: #F1E41D;
 }
 @media screen and (min-width: 40em) {
   .c-footer {
