@@ -26,16 +26,16 @@
     <div class="social  c-social--footer">
       <ul class="social__list--footer">
         <li class="social__icon  social__icon--footer">
-          <a href="https://github.com/tricialeach"><img src="img/social-icon-github.svg"></a>
+          <a href="https://github.com/tricialeach"><img src="/img/social-icon-github.svg"></a>
         </li>
         <li class="social__icon  social__icon--footer">
-          <a href="https://twitter.com/DaringHue"><img src="img/social-icon-twitter.svg"></a>
+          <a href="https://twitter.com/DaringHue"><img src="/img/social-icon-twitter.svg"></a>
         </li>
         <li class="social__icon  social__icon--footer">
-          <a href="https://www.linkedin.com/in/tricialeach/"><img src="img/social-icon-linkedin.svg"></a>
+          <a href="https://www.linkedin.com/in/tricialeach/"><img src="/img/social-icon-linkedin.svg"></a>
         </li>
         <li class="social__icon  social__icon--footer">
-          <a href="mailto:tleach@gmail.com"><img src="img/social-icon-email.svg"></a>
+          <a href="mailto:tleach@gmail.com"><img src="/img/social-icon-email.svg"></a>
         </li>
       </ul>
     </div>
