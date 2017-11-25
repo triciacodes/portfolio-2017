@@ -4,7 +4,7 @@
 
 <div class="c-main page-index">
 
-  <header class="c-header">
+  <header class="c-header  header--index">
     <div class="header  header--left">
       <!-- <img src="img/patterns.png" width="400px" style="padding-right: 150px" alt="Geometric patterns"> -->
     </div>

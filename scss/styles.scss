@@ -47,7 +47,7 @@ $font-weight-heavy: 700;
 $breakpoint1: 25.2em; // 400 px
 $breakpoint2: 40em; // 600 px
 $breakpoint3: 50em; // 800 px
-$breakpoint4: 63em; // 1000 px
+$breakpoint4: 69em; // 1100 px
 $breakpoint5: 81em; // 1300 px
 
 
@@ -125,6 +125,88 @@ $breakpoint5: 81em; // 1300 px
       #HELPER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
+.box-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box-center {
+  align-self: center;
+}
+
+/* ************ #Grid Boxes ************ */
+
+.box-full {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query3 {
+    margin-bottom: 3%;
+  }
+}
+
+.box-lrg-l {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query3 {
+    width: 58.5%;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.box-sml-r {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query3 {
+    width: 38.5%;
+    margin-left: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.box-sml-l {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query3 {
+    width: 38.5%;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.box-lrg-r {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query3 {
+    width: 58.5%;
+    margin-left: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.box-half-l {
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query5 {
+    width: 48.5%;
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
+.box-half-r {
+  order: -1;
+  width: 100%;
+  margin-bottom: 1rem;
+  @include media-query5 {
+    order: initial;
+    width: 48.5%;
+    margin-left: 1.5%;
+    margin-bottom: 3%;
+  }
+}
+
 
 
 
@@ -149,7 +231,7 @@ body {
   color: $color-neutral-dark;
   font-family: $font-body;
   font-weight: $font-weight-regular;
-  line-height: 1.6;
+  line-height: 1.5;
   background-color: $color-background;
   border-top: 0.5rem solid $color-primary2;
   @include media-query3 {
@@ -186,8 +268,7 @@ ul {
 }
 
 li {
-  line-height: 1.4;
-  padding-bottom: .5rem;
+  line-height: 1.5;
 }
 
 
@@ -199,7 +280,7 @@ p {
   padding-bottom: 1.4rem;
 }
 
-.header {
+.header--index {
   font-size: 1rem;
   line-height: 1.7;
   @include media-query3 {
@@ -216,17 +297,19 @@ h2 {
   font-style: italic;
   font-weight: $font-weight-heavy;
   line-height: 1;
-  padding-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   @include media-query3 {
     font-size: 2.25rem;
-    padding-bottom: 2.5rem;
     text-align: left;
   }
 }
 
-.page-index h2 {
-  padding-bottom: 1.5rem;
+.page-contact h2, .page-about h2 {
+  padding-bottom: 1.75rem;
+  @include media-query3 {
+    padding-bottom: 2.5rem;
+  }
 }
 
 h3 {
@@ -236,6 +319,13 @@ h3 {
   letter-spacing: .05rem;
   text-transform: uppercase;
   margin-bottom: .8rem;
+}
+
+h4 {
+  color: $color-accent-medium;
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
 }
 
 footer {
@@ -319,12 +409,12 @@ nav, footer {
 }
 
 a.button:link {
-  color: $color-background;
+  color: $color-primary1;
   text-decoration: none;
 }
 
 a.button:hover {
-  color: $color-primary1;
+  color: $color-background;
 }
 
 a.button:visited {
@@ -400,12 +490,20 @@ a.button:visited {
   text-transform: uppercase;
   background-color: $color-primary2;
   border-radius: 3px;
+  text-align: center;
+  width: 10em;
+  @include media-query5 {
+    margin-bottom: .7em;
+    display: inline-block;
+  }
 }
 
 
 
+
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #MENU(MAIN) #NAVIGATION
+      #MENU(MAIN) #NAVIGATION
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .nav-links {
@@ -415,8 +513,8 @@ a.button:visited {
 .nav-links__main-menu {
   width: 92%;
   margin: auto;
-  margin-bottom: 6rem;
-  @include hover-transition;
+  margin-bottom: 3rem;
+  // @include hover-transition;
 
   @include media-query4 {
     position: fixed;
@@ -448,7 +546,7 @@ svg.logo--menu {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #HEADER
+      #HEADER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .c-header {
@@ -499,7 +597,7 @@ svg.logo--menu {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #FOOTER
+      #FOOTER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 footer ul {
@@ -509,6 +607,7 @@ footer ul {
 
 footer li {
   padding-bottom: 0;
+  line-height: 1;
 }
 
 .c-footer {
@@ -594,7 +693,7 @@ footer li {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #INDEX #CONTENT
+      #PAGE #INDEX #CONTENT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .c-projects {  /*  outer container for ALL projects on index page */
@@ -700,7 +799,7 @@ footer li {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #OVERLAY FOR INDEX PROJECTS
+      #PAGE #INDEX #OVERLAY FOR PROJECT TILES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 .overlay {
@@ -753,7 +852,7 @@ footer li {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #CONTACT
+      #PAGE #CONTACT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 /* add social icons before contact list */
@@ -766,18 +865,114 @@ footer li {
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #LAYOUT #PROJECT PAGES
+      #PAGE #PROJECT (IND)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-.project-summary {
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - layout */
 
-  .header--image {
-    margin-bottom: 3rem;
-  }
-
-
+.page-project {
+  margin-bottom: 3rem;
 }
 
+.c-header.page-project {
+  margin-bottom: 0rem; /* undo style set on index, about, contact */
+}
+
+.proj-header-img {
+  margin-bottom: 3rem;
+}
+
+.proj-header-top {
+  border-bottom: .5rem solid $color-primary2;
+  margin-bottom: 2rem;
+
+  .box-lrg-l, .box-sml-r {
+    margin-bottom: 0;
+  }
+}
+
+.proj-summary {
+  margin-bottom: .5rem;
+  @include media-query3 {
+    margin-bottom: 3rem;
+  }
+}
+
+.proj-sidebar ul {
+  margin-bottom: 0;
+}
+
+.proj-sidebar.box-sml-r {
+  order: -1;
+  @include media-query3 {
+    order: initial;
+    width: 32.5%;
+    margin-left: 1.5%;
+  }
+}
+
+.proj-sidebar .box-half-r {
+  text-align: center;
+  a { 
+    white-space: nowrap; /* ensures words in link don't break */
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+  @include media-query5 { 
+    text-align: right; 
+  }
+}
+
+.proj-detail {
+  justify-content: flex-end;
+  .box-lrg-r, .box-lrg-l, .box-sml-r, .box-sml-l {
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+  }
+  div > h3:first-of-type {
+    border-top: .5rem solid $color-primary2;
+    padding-top: .5rem;
+  }
+}
+
+.proj-detail img {
+  margin-bottom: 1rem;
+  @include media-query3 {
+    margin-bottom: 3%;
+  }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - type */
+
+.proj-header-top {
+
+  h3 {
+    text-align: center;
+    margin-bottom: .5rem;
+    padding-right: 3px;
+    @include media-query3 {
+      margin-bottom: 0;
+      text-align: right;
+    }
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    padding-left: 3px;
+    padding-bottom: .8rem;
+    @include media-query3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.proj-sidebar {
+  font-size: .8rem;
+}
+
+.proj-sidebar h4 {
+  padding-bottom: .5rem;
+}
 
 
 
@@ -785,8 +980,6 @@ footer li {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #JAVASCRIPT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-
 
 .js-fade-out {
   animation-name: fade-out;

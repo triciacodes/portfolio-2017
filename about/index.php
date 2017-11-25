@@ -32,17 +32,6 @@
 <!-- - - - - - - - - - - - - - - - #PROJECTS - - - - - - - - - - - - - - - -->
     
   <main>
-
-    <!-- <h2>Let's Chat</h2>
-
-    <div class="c-contact">
-
-    <p>Things you may want to contact me about:</p>
-    <ul>
-      <li></li>
-    </ul> -->
-      
-    </div> <!-- end contact container -->
   </main>
 
 </div> <!-- end c-main container // header and main content -->
