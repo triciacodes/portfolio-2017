@@ -15,6 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .box-center {
@@ -24,85 +25,73 @@
 /* ************ #Grid Boxes ************ */
 .box-full {
   width: 100%;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 40em) {
-  .box-full {
-    margin-bottom: 3%;
-  }
 }
 
-.box-lrg-l {
+.box-lrg {
   width: 100%;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 40em) {
-  .box-lrg-l {
+  .box-lrg {
     width: 58.5%;
-    margin-right: 1.5%;
-    margin-bottom: 3%;
   }
 }
 
-.box-sml-r {
+.box-sml {
   width: 100%;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 40em) {
-  .box-sml-r {
+  .box-sml {
     width: 38.5%;
-    margin-left: 1.5%;
-    margin-bottom: 3%;
   }
 }
 
-.box-sml-l {
+.box-half {
   width: 100%;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 40em) {
-  .box-sml-l {
-    width: 38.5%;
-    margin-right: 1.5%;
-    margin-bottom: 3%;
-  }
-}
-
-.box-lrg-r {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-@media screen and (min-width: 40em) {
-  .box-lrg-r {
-    width: 58.5%;
-    margin-left: 1.5%;
-    margin-bottom: 3%;
-  }
-}
-
-.box-half-l {
-  width: 100%;
-  margin-bottom: 1rem;
 }
 @media screen and (min-width: 69em) {
-  .box-half-l {
+  .box-half {
     width: 48.5%;
-    margin-right: 1.5%;
+  }
+}
+
+.box-half {
+  width: 100%;
+}
+@media screen and (min-width: 69em) {
+  .box-half {
+    width: 48.5%;
+  }
+}
+
+.box-third {
+  width: 100%;
+}
+@media screen and (min-width: 69em) {
+  .box-third {
+    width: 31.33333%;
+  }
+}
+
+/* ************ #Margins ************ */
+/* Standard margin */
+.box-full, .box-lrg, .box-sml, .box-half, .box-third {
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 40em) {
+  .box-full, .box-lrg, .box-sml, .box-half, .box-third {
     margin-bottom: 3%;
   }
 }
 
-.box-half-r {
-  order: -1;
-  width: 100%;
-  margin-bottom: 1rem;
+@media screen and (min-width: 40em) {
+  .marg-r {
+    margin-right: 1.5%;
+  }
 }
-@media screen and (min-width: 69em) {
-  .box-half-r {
-    order: initial;
-    width: 48.5%;
+
+@media screen and (min-width: 40em) {
+  .marg-l {
     margin-left: 1.5%;
-    margin-bottom: 3%;
   }
 }
 
@@ -201,7 +190,7 @@ p {
 }
 
 h2 {
-  color: #787677;
+  color: #F6A138;
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-style: italic;
@@ -240,6 +229,7 @@ h4 {
   text-transform: uppercase;
   font-size: .8rem;
   font-weight: 700;
+  letter-spacing: .05rem;
 }
 
 footer {
@@ -325,12 +315,12 @@ a.button:link {
   text-decoration: none;
 }
 
-a.button:hover {
+a.button:hover, a.button:visited:hover {
   color: #ffffff;
 }
 
 a.button:visited {
-  color: #ffffff;
+  color: #E9529D;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -766,6 +756,18 @@ footer li {
       #PAGE #PROJECT (IND)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - layout */
+.proj-detail {
+  /* override standard margin style */
+}
+.proj-detail .box-full, .proj-detail .box-lrg, .proj-detail .box-sml, .proj-detail .box-half, .proj-detail .box-third {
+  margin-bottom: 0rem;
+}
+@media screen and (min-width: 40em) {
+  .proj-detail .box-full, .proj-detail .box-lrg, .proj-detail .box-sml, .proj-detail .box-half, .proj-detail .box-third {
+    margin-bottom: 0%;
+  }
+}
+
 .page-project {
   margin-bottom: 3rem;
 }
@@ -777,13 +779,14 @@ footer li {
 
 .proj-header-img {
   margin-bottom: 3rem;
+  /* below the image at top of page */
 }
 
 .proj-header-top {
   border-bottom: 0.5rem solid #F1E41D;
   margin-bottom: 2rem;
 }
-.proj-header-top .box-lrg-l, .proj-header-top .box-sml-r {
+.proj-header-top .box-lrg, .proj-header-top .box-sml {
   margin-bottom: 0;
 }
 
@@ -797,41 +800,46 @@ footer li {
 }
 
 .proj-sidebar ul {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
-.proj-sidebar.box-sml-r {
+.proj-sidebar.box-sml {
   order: -1;
+  /* roles, collaborators above summary on mobile */
 }
 @media screen and (min-width: 40em) {
-  .proj-sidebar.box-sml-r {
+  .proj-sidebar.box-sml {
     order: initial;
     width: 32.5%;
-    margin-left: 1.5%;
   }
 }
 
-.proj-sidebar .box-half-r {
+.box-half.marg-l {
+  order: -1;
+}
+@media screen and (min-width: 69em) {
+  .box-half.marg-l {
+    order: initial;
+  }
+}
+
+.proj-sidebar .link-buttons {
   text-align: center;
 }
-.proj-sidebar .box-half-r a {
+.proj-sidebar .link-buttons a {
   white-space: nowrap;
   /* ensures words in link don't break */
   display: inline-block;
   margin-bottom: 1em;
 }
 @media screen and (min-width: 69em) {
-  .proj-sidebar .box-half-r {
+  .proj-sidebar .link-buttons {
     text-align: right;
   }
 }
 
 .proj-detail {
   justify-content: flex-end;
-}
-.proj-detail .box-lrg-r, .proj-detail .box-lrg-l, .proj-detail .box-sml-r, .proj-detail .box-sml-l {
-  margin-bottom: .5rem;
-  margin-top: 1rem;
 }
 .proj-detail div > h3:first-of-type {
   border-top: 0.5rem solid #F1E41D;
@@ -844,6 +852,17 @@ footer li {
 @media screen and (min-width: 40em) {
   .proj-detail img {
     margin-bottom: 3%;
+  }
+}
+
+.marg-b {
+  /* #todo -- find out why margin not working here */
+  /*          want to use margin instead of padding */
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 40em) {
+  .marg-b {
+    padding-bottom: 3%;
   }
 }
 

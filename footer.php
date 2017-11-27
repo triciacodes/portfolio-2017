@@ -35,7 +35,7 @@
           <a href="https://www.linkedin.com/in/tricialeach/"><img src="/img/social-icon-linkedin.svg"></a>
         </li>
         <li class="social__icon  social__icon--footer">
-          <a href="mailto:tleach@gmail.com"><img src="/img/social-icon-email.svg"></a>
+          <a href="mailto:hi@tricialea.ch"><img src="/img/social-icon-email.svg"></a>
         </li>
       </ul>
     </div>
