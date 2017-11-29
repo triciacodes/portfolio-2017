@@ -2,6 +2,8 @@
 
 <!-- - - - - - - - - - - - - - - - #HEADER - - - - - - - - - - - - - - - --> 
 
+<a id="page-about" href="#">
+
 <div class="c-main page-contact">
 
   <header class="c-header">

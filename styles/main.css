@@ -45,11 +45,11 @@
   }
 }
 
-.box-half {
+.proj-sidebar .box-half {
   width: 100%;
 }
 @media screen and (min-width: 69em) {
-  .box-half {
+  .proj-sidebar .box-half {
     width: 48.5%;
   }
 }
@@ -57,7 +57,7 @@
 .box-half {
   width: 100%;
 }
-@media screen and (min-width: 69em) {
+@media screen and (min-width: 40em) {
   .box-half {
     width: 48.5%;
   }
@@ -95,6 +95,24 @@
   }
 }
 
+.box-half.marg-r {
+  margin-right: 0;
+}
+@media screen and (min-width: 69em) {
+  .box-half.marg-r {
+    margin-right: 1.5%;
+  }
+}
+
+.box-half.marg-l {
+  margin-left: 0;
+}
+@media screen and (min-width: 69em) {
+  .box-half.marg-l {
+    margin-left: 1.5%;
+  }
+}
+
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #BASIC
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -114,13 +132,14 @@ body {
   color: #484647;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: #ffffff;
   border-top: 0.5rem solid #F1E41D;
 }
 @media screen and (min-width: 40em) {
   body {
     padding-top: 2rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -164,7 +183,6 @@ body {
 ul {
   list-style-type: circle;
   margin-left: 1.3rem;
-  margin-bottom: 1.3rem;
 }
 
 li {
@@ -175,17 +193,12 @@ li {
       #TYPE STYLES
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 p {
-  padding-bottom: 1.4rem;
-}
-
-.header--index {
-  font-size: 1rem;
   line-height: 1.7;
+  padding-bottom: 1.6rem;
 }
 @media screen and (min-width: 40em) {
-  .header--index {
+  p {
     font-size: 1.125rem;
-    line-height: 2;
   }
 }
 
@@ -197,12 +210,10 @@ h2 {
   font-weight: 700;
   line-height: 1;
   padding-bottom: 1.5rem;
-  text-align: center;
 }
 @media screen and (min-width: 40em) {
   h2 {
     font-size: 2.25rem;
-    text-align: left;
   }
 }
 
@@ -221,13 +232,13 @@ h3 {
   font-weight: 700;
   letter-spacing: .05rem;
   text-transform: uppercase;
-  margin-bottom: .8rem;
+  margin-bottom: .2rem;
 }
 
 h4 {
   color: #F6A138;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 700;
   letter-spacing: .05rem;
 }
@@ -379,7 +390,7 @@ a.button:visited {
 .button {
   margin-right: 5px;
   padding: 6px 10px;
-  font-size: .7rem;
+  font-size: .9rem;
   font-weight: 600;
   text-transform: uppercase;
   background-color: #F1E41D;
@@ -437,19 +448,19 @@ svg.logo--menu {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #HEADER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.c-header {
+.c-header, .c-about {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
 }
 @media screen and (min-width: 40em) {
-  .c-header {
-    margin-bottom: 5rem;
+  .c-header, .c-about {
+    margin-bottom: 3rem;
   }
 }
 @media screen and (min-width: 50em) {
-  .c-header {
-    margin-bottom: 7rem;
+  .c-header, .c-about {
+    margin-bottom: 4rem;
   }
 }
 
@@ -700,58 +711,26 @@ footer li {
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #PAGE #INDEX #OVERLAY FOR PROJECT TILES
+      #PAGE #ABOUT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, #E9529D 70%);
-  transition: 400ms;
-  transition-timing-function: ease-in-out;
-  opacity: 0;
-  /* transparent pngs */
-  /* to link to projects */
-  /* #TODO remove this when you work on overlay */
-  display: none;
+.about-portrait {
+  float: left;
+  width: calc(45% - 1rem);
+  margin-right: 1rem;
 }
-.overlay img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
+@media screen and (min-width: 40em) {
+  .about-portrait {
+    margin-right: 2rem;
+    width: calc(45% - 2rem);
+  }
 }
 
-.project-desc {
-  position: absolute;
-  bottom: 1rem;
-  width: 350px;
+.about-interests {
+  float: left;
+  width: 55%;
+  margin-bottom: 1rem;
 }
 
-.project-desc__title {
-  padding-bottom: 0.5rem;
-}
-
-.project-desc__text {
-  padding-bottom: 1.2rem;
-}
-
-.project--overlay:hover .overlay {
-  opacity: 1;
-  transition: 400ms;
-  transition-timing-function: ease-in-out;
-}
-
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #PAGE #CONTACT
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* add social icons before contact list */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #PAGE #PROJECT (IND)
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -771,6 +750,15 @@ footer li {
 .page-project {
   margin-bottom: 3rem;
 }
+.page-project h2 {
+  color: #E9529D;
+  text-align: center;
+}
+@media screen and (min-width: 40em) {
+  .page-project h2 {
+    text-align: left;
+  }
+}
 
 .c-header.page-project {
   margin-bottom: 0rem;
@@ -785,6 +773,7 @@ footer li {
 .proj-header-top {
   border-bottom: 0.5rem solid #F1E41D;
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 .proj-header-top .box-lrg, .proj-header-top .box-sml {
   margin-bottom: 0;
@@ -803,22 +792,31 @@ footer li {
   margin-bottom: 1rem;
 }
 
-.proj-sidebar.box-sml {
+.page-project .proj-sidebar.box-sml {
   order: -1;
   /* roles, collaborators above summary on mobile */
 }
 @media screen and (min-width: 40em) {
-  .proj-sidebar.box-sml {
+  .page-project .proj-sidebar.box-sml {
     order: initial;
     width: 32.5%;
   }
 }
 
-.box-half.marg-l {
+.proj-info .box-sml, .proj-info .box-lrg {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 40em) {
+  .proj-info .box-sml, .proj-info .box-lrg {
+    margin-bottom: 3%;
+  }
+}
+
+.page-sidebar .box-half.marg-l {
   order: -1;
 }
 @media screen and (min-width: 69em) {
-  .box-half.marg-l {
+  .page-sidebar .box-half.marg-l {
     order: initial;
   }
 }
@@ -889,12 +887,18 @@ footer li {
   }
 }
 
-.proj-sidebar {
-  font-size: .8rem;
+@media screen and (min-width: 40em) {
+  .proj-sidebar {
+    font-size: .9rem;
+  }
 }
 
 .proj-sidebar h4 {
   padding-bottom: .5rem;
+}
+
+.page-project ul {
+  margin-bottom: 2rem;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
@@ -941,6 +945,47 @@ footer li {
   100% {
     opacity: 1;
   }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #OVERRIDES / SPECIAL CIRCUMSTANCES
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* These are because of the way the white Instagram photos look
+   in the image grid. Moving up to accommodate for white space at
+   top, and centering so that when the two images break up on mobile,
+   they will still look centered. */
+.proj-detail-instagram {
+  justify-content: center;
+  margin-top: -20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.project--overlay {
+  transition: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+.project--overlay:hover {
+  box-shadow: 0 0 11px rgba(18, 18, 18, 0.3);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */

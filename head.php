@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
+<!-- GOOGLE ANALYTICS -->  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110290295-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110290295-1');
+</script>
+<!-- TITLE -->  
 <title>Tricia Leach | Portfolio | Web Developer and Designer | Portland, OR</title>
 <!-- META -->  
   <meta charset="utf-8">
@@ -37,12 +47,12 @@
     <div id="nav-links" class="nav-links nav-links__main-menu">
       <ul>
         <li><a href="/"><span class="branding branding--nav">Tricia</span></a></li>
-        <li><a href="/about/">About</a>
+        <li><a href="/#page-projects">Projects</a>
         </li>
-        <!-- <li><a href="/projects/">Projects</a>
+        <li><a href="/#page-about">About</a>
+        </li>
+        <!-- <li><a href="/contact/">Contact</a>
         </li> -->
-        <li><a href="/contact/">Contact</a>
-        </li>
       </ul>
     </div>  
 

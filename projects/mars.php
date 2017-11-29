@@ -43,26 +43,14 @@ $proj_challenges = "INSERT.";
       <!-- <div class="box-full  marg-b">
         <img src="/img/projects/mars-detail1.gif" width="100%" alt="Mars poster detail">
       </div> -->
-      <div class="box-lrg  marg-r  marg-b">
+      <div class="box-lrg  marg-r">
         <img src="/img/projects/mars-detail2.gif" width="100%" alt="Mars poster detail">
       </div>
-      <div class="box-sml  marg-l  marg-b">
+      <div class="box-sml  marg-l">
         <img src="/img/projects/mars2.jpg" width="100%" alt="Mars poster detail">  
-        <!-- <h3>Technology Used</h3>
-        <ul>
-          <li>CSS Transforms</li>
-          <li>CSS Animations</li>
-          <li>jQuery</li>
-          <li>SVG</li>
-        </ul> -->
       </div>
-      <!-- <div class="box-sml marg-r">
-        <img src="/img/projects/mars-detail3.gif" width="100%" alt="Mars poster detail">
-      </div> -->
-      <div class="box-lrg marg-l">
-      <!-- <h3>Development Process</h3>
-        <p>INSERT
-        </p> -->
+      <div class="box-full">
+        <img src="/img/projects/mars-detail4.gif" width="100%" alt="Mars poster detail">  
       </div>
 
     </div> <!--end proj-detail-->

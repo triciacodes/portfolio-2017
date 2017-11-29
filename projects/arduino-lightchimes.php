@@ -42,14 +42,36 @@ $proj_challenges = "INSERT";
 <!-- - - - - - - - - - - - - - - - #IMAGES/CONTENT - - - - - - - - - - - - - - - -->
 
     <div class="proj-detail  box-flex">
-      <div class="box-full marg-b">
-        <!-- <img src="/img/projects/be-honest-detail1.jpg" alt="Disco ball and event brochure"> -->
+      <div class="box-full">
+        <img src="/img/projects/arduino-lightchimes-header.jpg" alt="Colored tubes of LED lights">
       </div>
-      <!-- <div class="proj-info  box-lrg  marg-l  marg-b">
-        <h3>Development Process</h3>
-        <p>INSERT
-        </p>
-      </div> -->
+      <div class="box-full  box-flex  marg-b">
+        <div class="box-half  marg-r">
+          <img src="/img/projects/arduino-lightchimes-detail1.jpg" alt="Colored tubes of LED lights">
+        </div> 
+        <div class="box-half  marg-l">
+          <img src="/img/projects/arduino-lightchimes-detail2.jpg" alt="Colored tubes of LED lights">
+        </div> 
+      </div>
+      <div class="box-full  box-flex  marg-b">
+        <div class="box-half  marg-r">
+          <video controls="autoplay" name="Arduino process" src="/img/projects/arduino-lightchimes-detail3.mov"></video>
+        </div> 
+        <div class="box-half  marg-l">
+          <img src="/img/projects/arduino-lightchimes-detail4.jpg" alt="Colored tubes of LED lights">
+        </div> 
+      </div>
+      <div class="box-full  box-flex  marg-b">
+        <div class="box-half  marg-r">
+          <img src="/img/projects/arduino-lightchimes-detail5.jpg" alt="Colored tubes of LED lights">
+        </div> 
+        <div class="box-half  marg-l">
+          <img src="/img/projects/arduino-lightchimes-detail6.jpg" alt="Colored tubes of LED lights">
+        </div> 
+      </div>
+
+      <div class="embed-container  box-full"><iframe src='https://player.vimeo.com/video/221273646' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+
 
     </div> <!--end proj-detail-->
 

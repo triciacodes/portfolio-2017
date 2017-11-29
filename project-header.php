@@ -3,9 +3,9 @@
 <div class="c-main  page-project">
 
   <header class="c-header  page-project  box-flex">
-    <div class="proj-header-img  box-full">
+    <!-- <div class="proj-header-img  box-full">
       <img src="/img/projects/<?=$proj_code?>-header.jpg" alt="<?=$header_alt_tag?>">
-    </div>
+    </div> -->
     <div class="proj-header-top  box-flex  box-full">
       <div class="box-lrg marg-r  box-center">
         <h2><?=$proj_title?></h2>
@@ -24,7 +24,7 @@
 
     <div class="proj-summary  box-flex">
       <div class="proj-info  box-lrg  marg-r">
-        <h3>Summary</h3>
+        <!-- <h3>Summary</h3> -->
         <p>
           <?=$proj_summary?>
         </p>

@@ -156,16 +156,18 @@ $breakpoint5: 81em; // 1300 px
   }
 }
 
-.box-half {
+.proj-sidebar {
+  .box-half {
   width: 100%;
-  @include media-query5 {
-    width: 48.5%;
+    @include media-query5 {
+      width: 48.5%;
+    }
   }
 }
 
 .box-half {
   width: 100%;
-  @include media-query5 {
+  @include media-query3 {
     width: 48.5%;
   }
 }
@@ -199,6 +201,20 @@ $breakpoint5: 81em; // 1300 px
   }
 }
 
+.box-half.marg-r {
+  margin-right: 0;
+  @include media-query5 {
+    margin-right: 1.5%;
+  }
+}
+
+.box-half.marg-l {
+  margin-left: 0;
+  @include media-query5 {
+    margin-left: 1.5%;
+  }
+}
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
       #BASIC
@@ -220,11 +236,12 @@ body {
   color: $color-neutral-dark;
   font-family: $font-body;
   font-weight: $font-weight-regular;
-  line-height: 1.5;
+  line-height: 1.7;
   background-color: $color-background;
   border-top: 0.5rem solid $color-primary2;
   @include media-query3 {
     padding-top: 2rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -253,7 +270,6 @@ body { min-height: 100%; min-width: 100%; display: table; }
 ul {
   list-style-type: circle; 
   margin-left: 1.3rem;
-  margin-bottom: 1.3rem;
 }
 
 li {
@@ -266,20 +282,14 @@ li {
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 p {
-  padding-bottom: 1.4rem;
-}
-
-.header--index {
-  font-size: 1rem;
   line-height: 1.7;
+  padding-bottom: 1.6rem;
   @include media-query3 {
     font-size: 1.125rem;
-    line-height: 2;
   }
 }
 
 h2 {
-  //color: $color-accent-medium;
   color: $color-accent-medium;
   font-family: $font-nav;
   font-size: 1.8rem;
@@ -287,10 +297,8 @@ h2 {
   font-weight: $font-weight-heavy;
   line-height: 1;
   padding-bottom: 1.5rem;
-  text-align: center;
   @include media-query3 {
     font-size: 2.25rem;
-    text-align: left;
   }
 }
 
@@ -307,13 +315,13 @@ h3 {
   font-weight: 700;
   letter-spacing: .05rem;
   text-transform: uppercase;
-  margin-bottom: .8rem;
+  margin-bottom: .2rem;
 }
 
 h4 {
   color: $color-accent-medium;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: .9rem;
   font-weight: 700;
   letter-spacing: .05rem;
 }
@@ -475,7 +483,7 @@ a.button:visited {
 .button {
   margin-right: 5px;
   padding: 6px 10px;
-  font-size: .7rem;
+  font-size: .9rem;
   font-weight: $font-weight-medium;
   text-transform: uppercase;
   background-color: $color-primary2;
@@ -539,15 +547,15 @@ svg.logo--menu {
       #HEADER
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-.c-header {
+.c-header, .c-about {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   @include media-query3 {
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
   }
   @include media-query4 {
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -788,67 +796,27 @@ footer li {
 
 
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #PAGE #INDEX #OVERLAY FOR PROJECT TILES
-\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding: 1rem;
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, $color-primary1 70%);
-  @include hover-transition;
-  opacity: 0;
-
-  /* transparent pngs */
-  /* to link to projects */
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-  }  
-  /* #TODO remove this when you work on overlay */
-  display: none;
-}
-
-.project-desc {
-  position: absolute;
-  bottom: 1rem;
-  width: 350px;
-}
-
-.project-desc__title {
-  padding-bottom: 0.5rem;
-}
-
-.project-desc__text {
-  padding-bottom: 1.2rem;
-}
-
-.project--overlay:hover .overlay { 
-  opacity: 1;
-  @include hover-transition;
-}
-
-
-
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
-      #PAGE #CONTACT
+      #PAGE #ABOUT
 \* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* add social icons before contact list */
-// li.contact-email:before {
-//   content: "";
-// }
+.about-portrait {
+  float: left;
+  width: calc(45% - 1rem);
+  margin-right: 1rem;
+  @include media-query3 {
+    margin-right: 2rem;
+    width: calc(45% - 2rem);
+  }
+}
+
+.about-interests {
+  float: left;
+  width: 55%;
+  margin-bottom: 1rem;
+}
 
 
 
@@ -872,6 +840,13 @@ footer li {
 
 .page-project {
   margin-bottom: 3rem;
+  h2 {
+    color: $color-primary1;
+    text-align: center;
+    @include media-query3 {
+      text-align: left;
+    }
+  }
 }
 
 .c-header.page-project {
@@ -885,7 +860,7 @@ footer li {
 .proj-header-top {
   border-bottom: .5rem solid $color-primary2;
   margin-bottom: 2rem;
-
+  margin-top: 4rem;
   .box-lrg, .box-sml {
     margin-bottom: 0;
   }
@@ -902,18 +877,29 @@ footer li {
   margin-bottom: 1rem;
 }
 
-.proj-sidebar.box-sml {
-  order: -1; /* roles, collaborators above summary on mobile */
-  @include media-query3 {
-    order: initial;
-    width: 32.5%;
+.page-project {
+  .proj-sidebar.box-sml {
+    order: -1; /* roles, collaborators above summary on mobile */
+    @include media-query3 {
+      order: initial;
+      width: 32.5%;
+    }
   }
 }
 
-.box-half.marg-l {
-  order: -1;
-  @include media-query5 {
-    order: initial;
+.proj-info .box-sml, .proj-info .box-lrg {
+  margin-bottom: 2rem;
+  @include media-query3 {
+    margin-bottom: 3%;
+  }
+}
+
+.page-sidebar {
+  .box-half.marg-l {
+    order: -1;
+    @include media-query5 {
+      order: initial;
+    }
   }
 }
 
@@ -984,12 +970,19 @@ footer li {
 }
 
 .proj-sidebar {
-  font-size: .8rem;
+  @include media-query3 {
+    font-size: .9rem;
+  }
 }
 
 .proj-sidebar h4 {
   padding-bottom: .5rem;
 }
+
+.page-project ul {
+  margin-bottom: 2rem;
+}
+
 
 
 
@@ -1024,4 +1017,51 @@ footer li {
   0% {opacity: 0; visibility: hidden;}
   10% {opacity: 0; visibility: visible;}
   100% {opacity: 1}
+}
+
+
+
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #OVERRIDES / SPECIAL CIRCUMSTANCES
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/* These are because of the way the white Instagram photos look
+   in the image grid. Moving up to accommodate for white space at
+   top, and centering so that when the two images break up on mobile,
+   they will still look centered. */
+.proj-detail-instagram {
+  justify-content: center; 
+  margin-top: -20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *\
+      #TESTING
+\* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+.project--overlay {
+  @include hover-transition();
+}
+
+.project--overlay:hover {
+  // opacity: .8;
+  box-shadow: 0 0 11px rgba(18, 18, 18, 0.3);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

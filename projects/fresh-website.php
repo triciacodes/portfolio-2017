@@ -9,6 +9,13 @@ $header_alt_tag = "FRESH website mockup";
 $proj_type = "Website";
 $proj_summary = "In the last course in the PSU Graphic Design program, graduating students work together to create a portfolio show called FRESH. Each student uses their unique skills and interests to contribute to the event in a meaningful way. I was thrilled to work as the lead developer, alongside the art direction, design, and copywriting teams to create a website to serve as a means to promote the show, as well as an archive of our work.";
 $proj_challenges = "Some of the main challenges were turnaround time and complexity of the existing code. We had ten weeks pull the portfolio show together (including completing our personal portfolios and displays), so there was a two week window between the date the art direction and design was solidified, and our desired launch date. I took advantage of the initial few weeks of class to familiarize myself with the existing code, and make a detailed plan for completion of the website to ensure we could meet our launch date.";
+$proj_roles = "<li>Web Development</li>";
+$proj_collaborators = "<li>Kate Bingaman-Burt, Advisor</li>
+<li>Thom Hines, Advisor</li>
+<li>Drew Hankins, Web Development</li>
+<li>Tina Roach, Web Design</li>";
+$proj_site = "https://psu.gd/fresh";
+$proj_github = "https://github.com/tricialeach/Fresh-Site";
 ?>
 
 <!-- - - - - - - - - - - - - - - - #HEADER/PROJECT SUMMARY - - - - - - - - - - - - - - - -->
@@ -21,20 +28,17 @@ $proj_challenges = "Some of the main challenges were turnaround time and complex
         <div class="box-half  marg-r">  
           <h4>Roles</h4>
           <ul>
-            <li>Web Development</li>
+            <?=$proj_roles?>
           </ul> 
         </div>
         <div class="box-half  marg-l  link-buttons">
-          <a href="https://psu.gd/fresh/" class="button">Live Site</a>
-          <a href="https://github.com/tricialeach/Fresh-Site" class="button">Code / GitHub</a>
+          <a href="<?=$proj_site?>" class="button">Live Site</a>
+          <a href="<?=$proj_github?>" class="button">Code / GitHub</a>
         </div>
         <div class="box-full">
           <h4>Collaborators</h4>
           <ul>
-            <li>Kate Bingaman-Burt, Advisor</li>
-            <li>Thom Hines, Advisor</li>
-            <li>Drew, Web Development</li>
-            <li>Tina Roach, Web Design</li>
+            <?=$proj_collaborators?>
           </ul>
         </div>
       </div> <!-- end proj-sidebar -->
@@ -44,7 +48,6 @@ $proj_challenges = "Some of the main challenges were turnaround time and complex
 
     <div class="proj-detail  box-flex">
       <div class="box-full marg-b">
-        <!-- <img src="/img/projects/fresh-website-page1.jpg" alt="Index page of Fresh website"> -->
         <img src="/img/projects/fresh-website-page1.jpg" alt="Index page of Fresh website">
       </div>
       <div class="proj-info  box-flex  box-full  marg-b">
@@ -64,7 +67,7 @@ $proj_challenges = "Some of the main challenges were turnaround time and complex
           <h3>Objectives</h3>
           <ul>
             <li>Make the index page load faster</li>
-            <li>Strip away Gulp/Sass process and go back to CSS</li>
+            <li>Strip away Gulp/Sass process and go back to CSS to ensure the site remains accessible to student developers</li>
             <li>Make the entire site more responsive</li>
             <li>Leave the code better than how we found it</li>
           </ul>
