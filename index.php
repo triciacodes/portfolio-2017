@@ -9,8 +9,7 @@
       <!-- <img src="img/patterns.png" width="400px" style="padding-right: 150px" alt="Geometric patterns"> -->
     </div>
     <div class="header  header--right">
-      <p>Hi there! I'm Tricia Leach, a <span class="branding">developer</span> and <span class="branding">designer</span> in Portland, OR. I'm currently finishing my graphic design degree at Portland State University, and preparing for my senior portfolio show, <a href="http://psu.gd/fresh">FRESH</a>.
-      <p>In the process of my studies, I revived an old passion for web development, and found a new love in creative coding. I'm currently seeking opportunities to grow in a front-end development role on a stellar team. Could this be you?</p>
+      <p>Hi there! I'm Tricia Leach, a <span class="branding">developer</span> and <span class="branding">designer</span> in Portland, OR. As of December 2017, I'm a Portland State Graphic Design graduate (woo!). While studying at PSU, I revived an old passion for web development, and found a new love in creative coding. I'm currently compiling some of my Processing and web animation experiments to a <a href="http://tricia.codes">code sketchbook</a>.
     </div>
   </header>
 
@@ -85,10 +84,10 @@
       <div class="box-half  marg-r">
         <!-- <h3>Obligatory third person bio</h3> -->
         <p>I'm happiest working somewhere in the middle of design, art, craft, and technology. I love digging into the details of code to build engaging and delightful experiences, both for the web and the physical world. My secret weapons are my enthusiasm for community building, and a well-crafted spreadsheet.</p>
-        <p>I have eight years of financial analysis/project management experience preceeding my years at Portland State. During that time I acquired many skills that complement the work I've been doing with programming. So while I may be looking for a junior dev position, I'll be bringing over a decade of professional experience with me, as well as a keen eye for design.
+        <!-- <p>I have eight years of financial analysis/project management experience preceeding my years at Portland State. During that time I acquired many skills (<a href="/assets/tricia-leach-resume-dec-2017-web.pdf">pdf resume</a>) that complement the work I've been doing with programming. So while I may be looking for a junior dev position, I'll be bringing over a decade of professional experience with me, as well as a keen eye for design. -->
         </p>
         <h3>I'd love to hear from you</h3>
-        <p>Would you like to chat about freelance projects, roles at your company, or get a time travel novel recommendation? Say hello at <a href="mailto:hi@tricialea.ch">hi@tricialea.ch</a>.
+        <p>Say hello at <a href="mailto:hi@tricialea.ch">hi@tricialea.ch</a>. I'd love to help PSU students who are interested in learning how to code &mdash; contact me for resources or with questions!
         </p>
       </div>
 
@@ -102,6 +101,7 @@
           <ul>
             <li>Front-End Development</li>
             <li>Creative Coding</li>
+            <li>Web Animation</li>
             <li>Web Typography</li>
             <li>Interactive Design</li>
             <li>Pattern Design</li>
