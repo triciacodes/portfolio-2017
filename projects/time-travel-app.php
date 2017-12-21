@@ -43,10 +43,10 @@ $proj_challenges = "Web development and design, art direction, project managemen
 
     <div class="proj-detail  box-flex">
       <div class="box-full marg-b">
-        <img src="/img/projects/time-travel-app-wireframes.jpg" alt="Disco ball and event brochure">
+        <img src="/img/projects/time-travel-app-wireframes.jpg" alt="Time travel app">
       </div>
       <div class="box-full marg-b">
-        <img src="/img/projects/time-travel-app-iphone.jpg" alt="Disco ball and event brochure">
+        <img src="/img/projects/time-travel-app-iphone.jpg" alt="Time travel app">
       </div>
       <!-- <div class="proj-info  box-lrg  marg-l  marg-b">
         <h3>Research Process</h3>

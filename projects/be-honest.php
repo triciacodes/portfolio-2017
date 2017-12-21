@@ -48,16 +48,16 @@ $proj_challenges = "INSERT";
 
     <div class="proj-detail  box-flex">
       <div class="box-flex  box-full  proj-detail-instagram">
-        <img class="box-half  marg-b" src="/img/projects/be-honest-instagram-pair1.jpg" alt="Disco ball and event brochure">
-        <img class="box-half  marg-b" src="/img/projects/be-honest-instagram-pair2.jpg" alt="Disco ball and event brochure">
+        <img class="box-half  marg-b" src="/img/projects/be-honest-instagram-pair1.jpg" alt="Be Honest detail">
+        <img class="box-half  marg-b" src="/img/projects/be-honest-instagram-pair2.jpg" alt="Be Honest detail">
       </div>
       <div class="box-flex  box-full">
-        <img src="/img/projects/be-honest-mockup.jpg" alt="Disco ball and event brochure">
+        <img src="/img/projects/be-honest-mockup.jpg" alt="Be Honest detail">
       </div>
       <div class="box-full  box-flex">
-        <img src="/img/projects/be-honest-detail1.jpg" alt="Disco ball and event brochure">
+        <img src="/img/projects/be-honest-detail1.jpg" alt="Be Honest detail">
         <img class="box-lrg  marg-r  marg-b" src="/img/projects/be-honest-detail3.jpg" alt="Disco ball and event brochure">
-        <img class="box-sml  marg-l  marg-b" src="/img/projects/be-honest-detail5.jpg" alt="Disco ball and event brochure">
+        <img class="box-sml  marg-l  marg-b" src="/img/projects/be-honest-detail5.jpg" alt="Be Honest detail">
       </div>
 
     </div> <!--end proj-detail-->

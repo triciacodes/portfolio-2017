@@ -62,7 +62,7 @@ $proj_github = "https://github.com/tricialeach/Fresh-Site";
         </div>
         <div class="box-lrg  marg-l">
           <h3>Development Process</h3>
-          <p>The code is built upon and changed by each term's graduating class. I immediately downloaded the existing code from GitHub to see what I had to work with. Not only was the site structure more complicated than the personal projects I normally work on, but one of the consequences of having prior terms of students build upon the same code is that it had become bloated with many lines of CSS, and JavaScript files that were no longer being used.
+          <p>The code is built upon and changed by each term's graduating class. I immediately downloaded the existing code from GitHub to see what I had to work with. Not only was the site structure more complicated than the personal projects I normally work on, but one of the consequences of having prior terms of students build upon the same code is that it had become bloated with many lines of CSS, and JavaScript files that were no longer being used. Working with another student designer and developer, we were able to launch the site on time, while meeting our objectives.
           </p>
           <h3>Objectives</h3>
           <ul>
@@ -71,7 +71,6 @@ $proj_github = "https://github.com/tricialeach/Fresh-Site";
             <li>Make the entire site more responsive</li>
             <li>Leave the code better than how we found it</li>
           </ul>
-          <p>Full case study coming soon...</p>
         </div>
       </div>
     </div> <!--end proj-detail-->

@@ -4,7 +4,7 @@
 
 <?php
 $proj_code = "arduino-lightchimes";
-$proj_title = "Arduino Lightchimes";
+$proj_title = "Arduino Light Installation";
 $header_alt_tag = "Tubes of colored LED lights";
 $proj_type = "Installation";
 $proj_summary = "For design thesis, I taught myself how to use Arduino circuit boards and sensors to code and build a light installation at a public park. The lightchimes were triggered both by wind and human movement, and cycled through rainbow colors. This period of self-study was the catalyst for future projects using various creative programming tools and languages.";
