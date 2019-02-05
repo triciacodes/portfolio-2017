@@ -451,7 +451,8 @@ svg.logo--menu {
 .c-header, .c-about {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 40em) {
   .c-header, .c-about {
@@ -717,6 +718,8 @@ footer li {
   float: left;
   width: calc(45% - 1rem);
   margin-right: 1rem;
+  position: relative;
+  top: 6px;
 }
 @media screen and (min-width: 40em) {
   .about-portrait {
