@@ -9,7 +9,11 @@
       <!-- <img src="img/patterns.png" width="400px" style="padding-right: 150px" alt="Geometric patterns"> -->
     </div>
     <div class="header  header--right">
-      <p>Hi there! I'm <span class="branding">Tricia Leach</span>, a developer and designer in Portland, OR. I'm currently working at <a href="http://fuzzco.com/">Fuzzco</a> as a junior developer. You can also find me compiling some of my Processing and web animation experiments at my <a href="http://tricia.codes">code sketchbook</a>.
+      <p>Hi there! I'm <span class="branding">Tricia Leach</span>, a front-end web developer with a recent design education, and a professional background including project management. I love the process of collaborating with designers and clients, and take pride in caring about the small design details.
+      </p>
+      <p>I'm eager to learn new technologies, with a particular interest in creative development and animation. <!-- I previously worked at <a href="http://fuzzco.com/">Fuzzco</a> as a junior developer.--> I'm currently seeking a full-time role on a stellar team.
+      
+      <!-- You can also find me compiling some of my Processing and web animation experiments at my <a href="http://tricia.codes">code sketchbook</a>. -->
     </div>
   </header>
 
@@ -87,14 +91,14 @@
         <!-- <p>I have eight years of financial analysis/project management experience preceeding my years at Portland State. During that time I acquired many skills (<a href="/assets/tricia-leach-resume-dec-2017-web.pdf">pdf resume</a>) that complement the work I've been doing with programming. So while I may be looking for a junior dev position, I'll be bringing over a decade of professional experience with me, as well as a keen eye for design. -->
         </p>
         <h3>Drop me a line</h3>
-        <p>Say hello at <a href="mailto:hi@tricialea.ch">hi@tricialea.ch</a><br><br>I'd love to help students who are interested in learning how to code &mdash; contact me for resources or with questions!
+        <p>Would you like to chat about roles at your company, or freelance projects? Get in touch at <a href="mailto:hi@tricialea.ch">hi@tricialea.ch</a>
         </p>
       </div>
 
       <div class="box-half  marg-l  box-flex">
 
         <div class="about-portrait">
-          <img src="img/tricialeach_portrait.jpg" style="display: inline-block;" alt="Geometric patterns">
+          <img src="img/tricialeach_portrait.jpg" style="display: inline-block;" alt="Portrait of Tricia Leach">
         </div>
         <div class="about-interests">
         <h3>Some of my interests</h3>
