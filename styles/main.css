@@ -202,6 +202,10 @@ p {
   }
 }
 
+.p-small {
+  font-size: .9rem;
+}
+
 h2 {
   color: #F6A138;
   font-family: "Montserrat", sans-serif;
@@ -307,6 +311,22 @@ a:hover {
 
 a:visited {
   color: #F6A138;
+  font-weight: 700;
+}
+
+a.pink-link:link {
+  color: #E9529D;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a.pink-link:hover {
+  color: #E9529D;
+  font-weight: 700;
+}
+
+a.pink-link:visited {
+  color: #E9529D;
   font-weight: 700;
 }
 
@@ -603,6 +623,7 @@ footer li {
   /*  outer container for ALL projects on index page */
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 @media screen and (min-width: 40em) {

@@ -20,7 +20,7 @@
 
     <div class="text-align-right">
       <p class="branding">Tricia Leach</p>
-      <p>Developer &amp; Designer</p>
+      <p>Front-End Developer</p>
     </div>
 
     <div class="social  c-social--footer">

@@ -20,7 +20,7 @@ function loadImgs() {
     marsImage.setAttribute("src", "/img/projects/mars-sml.jpg");
     beHonestImage.setAttribute("src", "/img/projects/be-honest-sml.jpg");
     fogdWebsiteImage.setAttribute("src", "/img/projects/fogd-website-sml.jpg");
-    creativeCodingImage.setAttribute("src", "/img/projects/creative-coding-sml.jpg");
+    // creativeCodingImage.setAttribute("src", "/img/projects/creative-coding-sml.jpg");
     timeTravelAppImage.setAttribute("src", "/img/projects/time-travel-app-sml.jpg");
   } else {
     // earthquakePrepImage.setAttribute("src", "img/projects/earthquake-prep.jpg");
@@ -28,7 +28,7 @@ function loadImgs() {
     marsImage.setAttribute("src", "/img/projects/mars.jpg");
     beHonestImage.setAttribute("src", "/img/projects/be-honest.jpg");
     fogdWebsiteImage.setAttribute("src", "/img/projects/fogd-website.jpg");
-    creativeCodingImage.setAttribute("src", "/img/projects/creative-coding.jpg");
+    // creativeCodingImage.setAttribute("src", "/img/projects/creative-coding.jpg");
     timeTravelAppImage.setAttribute("src", "/img/projects/time-travel-app.jpg");
   }
 }

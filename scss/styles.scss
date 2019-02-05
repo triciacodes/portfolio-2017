@@ -289,6 +289,10 @@ p {
   }
 }
 
+.p-small {
+  font-size: .9rem;
+}
+
 h2 {
   color: $color-accent-medium;
   font-family: $font-nav;
@@ -389,6 +393,22 @@ a:hover {
 
 a:visited {
   color: $color-accent-medium;
+  font-weight: 700;
+}
+
+a.pink-link:link {
+  color: $color-primary1;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+a.pink-link:hover {
+  color: $color-primary1;
+  font-weight: 700;
+}
+
+a.pink-link:visited {
+  color: $color-primary1;
   font-weight: 700;
 }
 
@@ -698,6 +718,7 @@ footer li {
 .c-projects {  /*  outer container for ALL projects on index page */
   display: flex;
   flex-wrap: wrap;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   @include media-query3 {
     margin-bottom: 3rem;     /* margin between bottom of content and footer */
